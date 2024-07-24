@@ -1,0 +1,15 @@
+/* Light mode variables */
+:root {
+    --background-color: #185ef5; /* Light background */
+    --text-color: #000000; /* Dark text */
+    --header-color: #970505; /* Light header */
+    --dark--200: #a70000; /* Lighter shade for dark elements */
+}
+
+/* Dark mode variables */
+html.dark {
+    --background-color: #b90e0e; /* Dark background */
+    --text-color: #ffffff; /* Light text */
+    --header-color: #343a40; /* Dark header */
+    --dark--200: #aaaaaa; /* Darker shade for light elements */
+}

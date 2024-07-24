@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Forms | Porto - Multipurpose Website Template</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Porto - Multipurpose Website Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+	</head>
+	<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 0, 'effect': 'pulse'}">
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="wrapper-pulse">
+					<div class="cssload-pulse-loader"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+								<div class="card mb-4">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+											  	<form class="contact-form" action="php/contact-form.php" method="POST">
+													<div class="contact-form-success alert alert-success d-none mt-4">
+														<strong>Success!</strong> Your message has been sent to us.
+													</div>
+										  
+													<div class="contact-form-error alert alert-danger d-none mt-4">
+													  <strong>Error!</strong> There was an error sending your message.
+													  <span class="mail-error-message text-1 d-block"></span>
+													</div>
+										  
+													<div class="row">
+													  <div class="form-group col-lg-6">
+														<label class="form-label mb-1 text-2">Full Name</label>
+														<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
+													  </div>
+													  <div class="form-group col-lg-6">
+														<label class="form-label mb-1 text-2">Email Address</label>
+														<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
+													  </div>
+													</div>
+										  
+													<div class="row">
+													  <div class="form-group col-lg-6">
+														<label class="form-label">City</label>
+														<select class="form-select form-control h-auto py-2" data-msg-required="Please select a city." name="city" required>
+														  <option value="Houston" selected>Houston</option>
+														  <option value="Boca">Boca</option>
+														  <option value="New Orleans">New Orleans</option>
+														  <option value="Chicago">Chicago</option>
+														  <option value="Dallas">Dallas</option>
+														  <option value="Chorpus Christi">Corpus Christi</option>
+														  <option value="Mobile">Mobile</option>
+														  <option value="Milwaukee">Milwaukee</option>
+														</select>
+													  </div>
+													  <div class="form-group col-lg-6">
+														<label class="form-label mb-1 text-2">Category</label>
+														<select class="form-select form-control h-auto py-2" data-msg-required="Please select a category." name="category" required>
+														  <option value="General">General</option>
+														  <option value="ATO">ATO</option>
+														  <option value="Cloud and Server">Cloud and Server</option>
+														  <option value="Computer Accessory / Supply Request">Computer Accessory / Supply Request</option>
+														  <option value="Dictation and Transcription">Dictation and Transcription</option>
+														  <option value="Documentation">Documentation</option>
+														  <option value="Document Conversion or Recovery">Document Conversion or Recovery</option>
+														  <option value="Email">Email</option>
+														  <option value="Hardware/Software Request">Hardware/Software Request</option>
+														  <option value="Juris">Juris</option>
+														  <option value="Local Computer">Local Computer</option>
+														  <option value="Log In">Log In</option>
+														  <option value="MFA / Credentials">MFA / Credentials</option>
+														  <option value="Network Issues">Network Issues</option>
+														  <option value="New Toner Request">New Toner Request</option>
+														  <option value="Other">Other</option>
+														  <option value="Phone Or Fax">Phone Or Fax</option>
+														  <option value="Printer">Printer</option>
+														  <option value="Spam, Spoofing or Phishing Emails">Spam, Spoofing or Phishing Emails</option>
+														  <option value="Upload Files to Cloud">Upload Files to Cloud</option>
+														  <option value="Unspecified">Unspecified</option>
+														</select>
+													  </div>
+													  
+													</div>
+										  
+													<div class="row">
+													  <div class="form-group col">
+														<label class="form-label mb-1 text-2">Message</label>
+														<textarea maxlength="2000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" required></textarea>
+													  </div>
+													</div>
+										  
+													<div class="row">
+													  <div class="form-group col">
+														<div class="form-check">
+														  <input class="form-check-input" type="checkbox" value="" name="agree" id="tabContent10Checkbox" data-msg-required="You must agree before submitting." required>
+														  <label class="form-check-label" for="tabContent10Checkbox">
+															Agree to terms and conditions
+														  </label>
+														</div>
+													  </div>
+													</div>
+										  
+													<div class="row">
+														<div class="form-group col">
+														  <input type="submit" value="Submit Form" class="btn btn-primary" data-loading-text="Loading...">
+														  <button type="button" class="btn btn-primary" onclick="document.getElementById('fileUpload').click();">Attachment</button>
+														  <input type="file" id="fileUpload" name="attachment" style="display:none;" onchange="updateFileName()" data-msg-required="Please attach your file." accept=".doc,.docx,.pdf,.txt,.jpg,.jpeg,.png,.gif" data-msg-size="The file must be less than 20MB." required>
+														  <span id="fileUploadName"></span>
+														</div>
+													</div>
+												  </form>
+												</div>
+											  </div>
+											</div>
+										  </div>
+
+
+
+
+<script>
+function updateFileName() {
+  var upload = document.getElementById('fileUpload');
+  var fileNameField = document.getElementById('fileUploadName');
+  if (upload.files.length > 0) {
+    var fileName = upload.files[0].name;
+    fileNameField.textContent = ' ' + fileName + ' uploaded';
+  } else {
+    fileNameField.textContent = '';
+  }
+}
+</script>
+
+
+
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/examples/examples.forms.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	</body>
+</html>
