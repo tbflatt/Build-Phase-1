@@ -84,39 +84,18 @@
 														<ul class="dropdown-menu">
 															<li><a class="dropdown-item" href="extension.html">Extension List</a></li>
 															<li><a class="dropdown-item" href="visual.html">Visual Directory</a></li>
-															<li><a class="dropdown-item" href="assignments.html">Attourney Assignment</a></li>
 														</ul>
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">Learning</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="lunch.html">Lunch n' Learn</a></li>
-															<li><a class="dropdown-item" href="tutor.html">Tutorials</a></li>
-															<li><a class="dropdown-item" href="train.html">Training</a></li>
-														</ul>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">Events</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="upcoming.html">Upcoming</a></li>
-															<li><a class="dropdown-item" href="tickets.html">Tickets</a></li>
-															<li><a class="dropdown-item" href="#">Option 3</a></li>
-														</ul>
+														<a class="dropdown-item dropdown-toggle" href="event calendar.html">Events</a>
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">Other</a>
 														<ul class="dropdown-menu">
 															<li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-															<li><a class="dropdown-item" href="#">Option 2</a></li>
-															<li><a class="dropdown-item" href="#">Option 3</a></li>
-														</ul>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">Admin</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="#">Option 1</a></li>
-															<li><a class="dropdown-item" href="#">Option 2</a></li>
-															<li><a class="dropdown-item" href="#">Option 3</a></li>
 														</ul>
 													</li>
 
@@ -136,13 +115,6 @@
 	
 			<div role="main" class="main">
 				<div class="owl-carousel-wrapper position-relative" style="height: 670px">
-					<div class="owl-carousel-loader">
-						<div class="bounce-loader">
-							<div class="bounce1"></div>
-							<div class="bounce2"></div>
-							<div class="bounce3"></div>
-						</div>
-					</div>
 					<div class="owl-carousel dots-inside dots-horizontal-center show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': false, 'autoHeight': false, 'margin': 0, 'dots': true, 'dotsVerticalOffset': '-75px', 'nav': true, 'animateIn': 'fadeIn', 'animateOut': 'fadeOut', 'mouseDrag': false, 'touchDrag': false, 'pullDrag': false, 'autoplay': true, 'autoplayTimeout': 9000, 'autoplayHoverPause': true, 'rewind': true}">
 						<!-- Carousel Slide 1 -->
 						<div class="position-relative" data-dynamic-height="['670px','670px','670px','550px','500px']" style="background-image: url(img/slides/slide-bg.jpg); background-size: cover; background-position: center; height: 670px;">
@@ -150,10 +122,10 @@
 								<img src="img/slides/SBSB-EASTHAM1.png" class="w-100 appear-animation" data-appear-animation="fadeInLeftDownShorter" data-appear-animation-delay="500" alt="">
 							</div>
 							<div class="position-absolute top-50pct left-0 transform3dy-n50 w-50pct w-lg-auto">
-								<img src="img/slides/slide-laptop.jpg" class="w-100 appear-animation" data-appear-animation="fadeInRightDownShorter" data-appear-animation-delay="1000" alt="">
+								<img src="img/slides/SBSB-EASTHAM1.png" class="w-100 appear-animation" data-appear-animation="fadeInRightDownShorter" data-appear-animation-delay="1000" alt="">
 							</div>
 							<div class="position-absolute transform3dy-n50">
-								<img src="img/slides/slide-parallax-porto-symbol.png" class="w-75 appear-animation" data-appear-animation="fadeInRightDownShorter" data-appear-animation-delay="1500" alt="" style="top: 20%; left: -20%;" data-plugin-options="{'forceAnimation': true}">
+								<img src="img/slides/SBSB-EASTHAM1.png" class="w-75 appear-animation" data-appear-animation="fadeInRightDownShorter" data-appear-animation-delay="1500" alt="" style="top: 20%; left: -20%;" data-plugin-options="{'forceAnimation': true}">
 							</div>
 	
 							<div class="container position-relative z-index-1 h-100">
@@ -281,6 +253,38 @@
 		<script src="js/functions.js"></script>
 		
 		<script src="1darklight.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				setTimeout(function() {
+					$('#carousel').owlCarousel({
+						responsive: {
+							0: { items: 1 },
+							479: { items: 1 },
+							768: { items: 1 },
+							979: { items: 1 },
+							1199: { items: 1 }
+						},
+						loop: false,
+						autoHeight: false,
+						margin: 0,
+						dots: true,
+						dotsVerticalOffset: '-75px',
+						nav: true,
+						animateIn: 'fadeIn',
+						animateOut: 'fadeOut',
+						mouseDrag: false,
+						touchDrag: false,
+						pullDrag: false,
+						autoplay: true,
+						autoplayTimeout: 9000,
+						autoplayHoverPause: true,
+						rewind: true
+					});
+				}, 2000); // Adjust this delay as needed
+			});
+		</script>
+		
 
 	</body>
 </html>
