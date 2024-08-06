@@ -3,8 +3,8 @@
     "identityProviders": {
       "azureActiveDirectory": {
         "registration": {
-          "clientIdSettingName": "AzureActiveDirectory__ClientId",
-          "clientSecretSettingName": "AzureActiveDirectory__ClientSecret",
+          "clientIdSettingName": "16d2c678-8b3b-4cd8-8426-c1012a8d45d6",
+          "clientSecretSettingName": ".k68Q~JA1WfPELWZPt4aeumsS60yTLBcBiWjdbW3",
           "issuer": "https://login.microsoftonline.com/b35ecf49-005b-46ca-be5d-00205f52d853/v2.0"
         }
       }
@@ -12,8 +12,15 @@
   },
   "routes": [
     {
+      "route": "/",
+      "redirect": "/.auth/login/aad",
+      "statusCode": 302
+    },
+    {
       "route": "/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "statusCode": 401,
+      "rewrite": "/"
     }
   ]
 }
