@@ -5,24 +5,14 @@
         "registration": {
           "clientIdSettingName": "AzureActiveDirectory__ClientId",
           "clientSecretSettingName": "AzureActiveDirectory__ClientSecret",
-          "issuer": "https://login.microsoftonline.com/b35ecf49-005b-46ca-be5d-00205f52d853/v2.0"
+          "issuer": "https://login.microsoftonline.com/YOUR_TENANT_ID/v2.0"
         }
       }
     }
   },
   "routes": [
     {
-      "route": "/login",
-      "redirect": "/.auth/login/aad",
-      "statusCode": 302
-    },
-    {
       "route": "/",
-      "allowedRoles": ["authenticated"],
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/*",
       "allowedRoles": ["authenticated"]
     }
   ]
