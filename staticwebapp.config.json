@@ -12,17 +12,17 @@
   },
   "routes": [
     {
-      "route": "/*",
-      "allowedRoles": ["authenticated"]
-    },
-    {
       "route": "/login",
       "redirect": "/.auth/login/aad",
       "statusCode": 302
     },
     {
       "route": "/",
-      "rewrite": "/index.html",
+      "allowedRoles": ["authenticated"],
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/*",
       "allowedRoles": ["authenticated"]
     }
   ]
