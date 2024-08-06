@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 	<head>
 
 		<!-- Basic -->
@@ -46,6 +46,19 @@
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
 
+		<style>
+			.header-logo img {
+				width: 90px;
+				height: auto;
+				transition: width 0.3s, height 0.3s;
+			}
+	
+			#header.header-effect-shrink .header-logo img {
+				width: 90px; /* Adjust the sticky width */
+				height: auto; /* Maintain aspect ratio */
+			}
+		</style>
+
 	</head>
 	<body data-plugin-page-transition>
 		<div class="body">
@@ -57,9 +70,9 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="70" height="70" data-sticky-width="82" data-sticky-height="40" src="SBSB-logo.png">
+											<img alt="SBSB" style="width: 90px; height: auto;" data-sticky-width="90" data-sticky-height="90" src="SBSB-logo.png">
 										</a>
-									</div>
+									</div>							
 								</div>
 							</div>
 							<div class="header-column justify-content-end">
@@ -74,7 +87,7 @@
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">Support</a>
 														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="itsupport.html">IT Ticket</a></li>
+															<li><a class="dropdown-item" href="itform.html">IT Ticket</a></li>
 															<li><a class="dropdown-item" href="osr.html">Office Service Request</a></li>
 															<li><a class="dropdown-item" href="conf.html">Conf. Room Request</a></li>
 														</ul>
@@ -84,39 +97,18 @@
 														<ul class="dropdown-menu">
 															<li><a class="dropdown-item" href="extension.html">Extension List</a></li>
 															<li><a class="dropdown-item" href="visual.html">Visual Directory</a></li>
-															<li><a class="dropdown-item" href="assignments.html">Attourney Assignment</a></li>
 														</ul>
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">Learning</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="lunch.html">Lunch n' Learn</a></li>
-															<li><a class="dropdown-item" href="tutor.html">Tutorials</a></li>
-															<li><a class="dropdown-item" href="train.html">Training</a></li>
-														</ul>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">Events</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="upcoming.html">Upcoming</a></li>
-															<li><a class="dropdown-item" href="tickets.html">Tickets</a></li>
-															<li><a class="dropdown-item" href="#">Option 3</a></li>
-														</ul>
+														<a class="dropdown-item dropdown-toggle" href="event calendar.html">Events</a>
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">Other</a>
 														<ul class="dropdown-menu">
 															<li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-															<li><a class="dropdown-item" href="#">Option 2</a></li>
-															<li><a class="dropdown-item" href="#">Option 3</a></li>
-														</ul>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">Admin</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="#">Option 1</a></li>
-															<li><a class="dropdown-item" href="#">Option 2</a></li>
-															<li><a class="dropdown-item" href="#">Option 3</a></li>
 														</ul>
 													</li>
 
@@ -132,6 +124,8 @@
 						</div>
 					</div>
 				</div>
+			</header>
+			<hr class="my-5">
 
 			</header>
         <!-- Page Content -->
