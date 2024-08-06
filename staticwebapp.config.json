@@ -12,12 +12,8 @@
   },
   "routes": [
     {
-      "route": "/",
-      "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/.auth/login/aad/callback",
-      "allowedRoles": ["authenticated"]
+      "route": "/*",
+      "allowedRoles": ["INTRAACCESS"]
     }
   ]
 }
