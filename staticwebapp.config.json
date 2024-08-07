@@ -18,6 +18,10 @@
     {
       "route": "/.auth/logout/aad/callback",
       "rewrite": "/.auth/logout/aad/callback"
+    },
+    {
+      "route": "/*",
+      "allowedRoles": ["authenticated"]
     }
   ]
 }
