@@ -16,12 +16,12 @@
       "allowedRoles": ["authenticated"]
     },
     {
-      "route": "/.auth/login/aad",
-      "rewrite": "/.auth/login/aad"
+      "route": "/.auth/login/aad/callback",
+      "rewrite": "/.auth/login/aad/callback"
     },
     {
-      "route": "/.auth/logout/aad",
-      "rewrite": "/.auth/logout/aad"
+      "route": "/.auth/logout/aad/callback",
+      "rewrite": "/.auth/logout/aad/callback"
     }
   ]
 }
