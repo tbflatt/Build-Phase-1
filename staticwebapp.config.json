@@ -13,7 +13,7 @@
   "routes": [
     {
       "route": "/*",
-      "allowedRoles": ["INTRAACCESS"]
+      "allowedRoles": ["authenticated"]
     }
   ]
 }
