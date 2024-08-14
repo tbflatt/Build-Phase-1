@@ -21,7 +21,7 @@
     },
     {
       "route": "/*",
-      "allowedRoles": ["authenticated"],
+      "allowedRoles": ["*"],
       "allowedOrigins": [
         "https://wonderful-bush-0f99f2e10.5.azurestaticapps.net",
         "http://localhost:3000",
@@ -29,7 +29,11 @@
         "http://localhost:8080",
         "https://*.azurestaticapps.net",
         "https://*.azurewebsites.net",
-        "https://*.microsoftonline.com"
+        "https://*.microsoftonline.com",
+        "https://login.microsoftonline.com",
+        "https://login.microsoft.com",
+        "https://graph.microsoft.com",
+        "https://*.graph.microsoft.com"
       ]
     }
   ]
