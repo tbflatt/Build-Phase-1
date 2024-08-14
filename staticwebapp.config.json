@@ -20,8 +20,20 @@
       "rewrite": "/.auth/logout/aad/callback"
     },
     {
+      "route": "/",
+      "allowedRoles": ["authenticated"],
+      "allowedOrigins": [
+        "https://wonderful-bush-0f99f2e10.5.azurestaticapps.net",
+        "http://localhost:3000"
+      ]
+    },
+    {
       "route": "/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "allowedOrigins": [
+        "https://wonderful-bush-0f99f2e10.5.azurestaticapps.net",
+        "http://localhost:3000"
+      ]
     }
   ]
 }
