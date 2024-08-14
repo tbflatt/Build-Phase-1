@@ -21,7 +21,7 @@
     },
     {
       "route": "/*",
-      "allowedRoles": ["INTRAACCESS", "authenticated", "User"],
+      "allowedRoles": ["INTRAACCESS", "authenticated", "User", "Member"],
       "allowedOrigins": [
         "https://wonderful-bush-0f99f2e10.5.azurestaticapps.net",
         "http://localhost:3000",
