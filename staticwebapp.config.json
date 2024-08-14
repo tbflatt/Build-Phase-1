@@ -20,19 +20,16 @@
       "rewrite": "/.auth/logout/aad/callback"
     },
     {
-      "route": "/",
-      "allowedRoles": ["authenticated"],
-      "allowedOrigins": [
-        "https://wonderful-bush-0f99f2e10.5.azurestaticapps.net",
-        "http://localhost:3000"
-      ]
-    },
-    {
       "route": "/*",
       "allowedRoles": ["authenticated"],
       "allowedOrigins": [
         "https://wonderful-bush-0f99f2e10.5.azurestaticapps.net",
-        "http://localhost:3000"
+        "http://localhost:3000",
+        "http://localhost:4200",
+        "http://localhost:8080",
+        "https://*.azurestaticapps.net",
+        "https://*.azurewebsites.net",
+        "https://*.microsoftonline.com"
       ]
     }
   ]
