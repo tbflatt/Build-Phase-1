@@ -14,7 +14,7 @@
   "routes": [
     {
       "route": "/login",
-      "rewrite": "/.auth/login/aad/callback"
+      "rewrite": "/.auth/login/aad"
     },
     {
       "route": "/",
