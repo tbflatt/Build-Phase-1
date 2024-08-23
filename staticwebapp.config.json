@@ -3,38 +3,27 @@
     "identityProviders": {
       "azureActiveDirectory": {
         "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/b35ecf49-005b-46ca-be5d-00205f52d853/v2.0",
           "clientIdSettingName": "AzureActiveDirectory__ClientId",
-          "clientSecretSettingName": "AzureActiveDirectory__ClientSecret",
-          "issuer": "https://login.microsoftonline.com/b35ecf49-005b-46ca-be5d-00205f52d853/v2.0"
+          "clientSecretSettingName": "AzureActiveDirectory__ClientSecret"
         }
       }
     }
   },
   "routes": [
     {
-      "route": "/.auth/login/aad/callback",
-      "rewrite": "/.auth/login/aad/callback"
-    },
-    {
-      "route": "/.auth/logout/aad/callback",
-      "rewrite": "/.auth/logout/aad/callback"
+      "route": "/login",
+      "rewrite": "/.auth/login/aad"
     },
     {
       "route": "/*",
-      "allowedRoles": ["User", "INTRAACCESS"],
-      "allowedOrigins": [
-        "https://wonderful-bush-0f99f2e10.5.azurestaticapps.net",
-        "http://localhost:3000",
-        "http://localhost:4200",
-        "http://localhost:8080",
-        "https://*.azurestaticapps.net",
-        "https://*.azurewebsites.net",
-        "https://*.microsoftonline.com",
-        "https://login.microsoftonline.com",
-        "https://login.microsoft.com",
-        "https://graph.microsoft.com",
-        "https://*.graph.microsoft.com"
-      ]
+      "allowedRoles": ["authenticated"]
     }
-  ]
+  ],
+  "responseOverrides": {
+    "401": {
+      "redirect": "/login",
+      "statusCode": 302
+    }
+  }
 }
