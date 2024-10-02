@@ -7,6 +7,9 @@
           "clientIdSettingName": "AzureActiveDirectory__ClientId",
           "clientSecretSettingName": "AzureActiveDirectory__ClientSecret"
         },
+        "login": {
+          "loginParameters": ["response_type=code id_token"]
+        },
         "issuer": "https://login.microsoftonline.com/b35ecf49-005b-46ca-be5d-00205f52d853/v2.0"
       }
     }
@@ -18,13 +21,19 @@
     },
     {
       "route": "/",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "serve": "/index.html"
     },
     {
       "route": "/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "serve": "/index.html"
     }
   ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/.auth/*"]
+  },
   "responseOverrides": {
     "401": {
       "redirect": "/login",
