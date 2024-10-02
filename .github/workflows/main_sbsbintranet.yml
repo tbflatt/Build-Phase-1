@@ -14,8 +14,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set correct permissions
+        run: chmod -R 777 .
+
       - name: Remove git extraheader
-        run: git config --system --unset-all http.extraheader || true
+        run: |
+          sudo git config --system --unset-all http.extraheader || true
+          sudo chown -R $USER:$USER .git
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
