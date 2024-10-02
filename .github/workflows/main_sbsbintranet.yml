@@ -19,10 +19,12 @@ jobs:
         with:
           node-version: '20.x'
 
+      # No build step needed since it's not defined in the project
+
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_BUSH_0F99F2E10 }}  # Updated token reference to match your secret
           app_location: "/"  # Location of your app source code
-          output_location: "build"  # Adjust to the actual build output folder
+          output_location: ""  # No build output directory required
           deployment_action: "upload"  # Explicitly setting deployment action
