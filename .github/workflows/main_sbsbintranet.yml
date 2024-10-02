@@ -33,12 +33,6 @@ jobs:
           npm install
           npm run build --if-present
 
-      - name: List repository files after build
-        run: ls -la
-
-      - name: List build directory contents
-        run: ls -la build
-
       - name: Deploy to Azure Static Web Apps
         id: swa
         uses: Azure/static-web-apps-deploy@v1
