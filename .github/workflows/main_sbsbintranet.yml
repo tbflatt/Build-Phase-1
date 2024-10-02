@@ -25,6 +25,6 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_BUSH_0F99F2E10 }}  # Updated token reference to match your secret
-          app_location: "/"  # Location of your app source code
-          output_location: ""  # No build output directory required
+          app_location: "/"  # Points to the root of your app
+          output_location: ""  # No build output directory required since there's no build step
           deployment_action: "upload"  # Explicitly set the deployment action to upload
