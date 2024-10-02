@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Remove git extraheader
-        run: sudo git config --system --unset-all http.extraheader || true
+        run: git config --system --unset-all http.extraheader || true
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -29,6 +29,9 @@ jobs:
         run: |
           npm install
           npm run build --if-present
+
+      - name: List build directory contents
+        run: ls -alh build
 
       - name: Deploy to Azure Static Web Apps
         id: swa
