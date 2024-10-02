@@ -23,11 +23,12 @@
   "main": "./js/star-rating.min.js",
   "style": "./css/star-rating.min.css",
   "peerDependencies": {
-    "jquery": ">= 1.9.0",
-    "bootstrap": ">= 3.0.0"
+    "bootstrap": ">= 3.0.0",
+    "jquery": ">= 1.9.0"
   },
   "license": "BSD-3-Clause",
   "dependencies": {
+    "bootstrap-star-rating": "file:",
     "opencollective-postinstall": "^2.0.2"
   },
   "collective": {

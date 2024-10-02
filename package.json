@@ -19,9 +19,9 @@
   "author": "Thad Flatt",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sbsbintranet": "file:"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=14.0.0"
   }

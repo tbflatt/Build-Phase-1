@@ -22,6 +22,7 @@
 		"url": "http://github.com/jackmoore/zoom.git"
 	},
 	"dependencies": {
-		"jquery": ">=1.7"
+		"jquery": ">=1.7",
+		"jquery-zoom": "file:"
 	}
 }

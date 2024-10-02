@@ -30,6 +30,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "gulp-uglify": "^1.5.3",
+    "hover3d": "file:",
     "jshint": "^2.9.1"
   }
 }

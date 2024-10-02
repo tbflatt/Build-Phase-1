@@ -20,5 +20,8 @@
     "grunt-notify": "^0.4.1",
     "grunt-sass": "^1.1.0",
     "load-grunt-tasks": "^2.0.0"
+  },
+  "dependencies": {
+    "zurb-twentytwenty": "file:"
   }
 }

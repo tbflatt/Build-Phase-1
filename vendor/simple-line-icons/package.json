@@ -27,6 +27,7 @@
   },
   "homepage": "https://thesabbir.github.io/simple-line-icons",
   "dependencies": {
-    "less": "^3.12.2"
+    "less": "^3.12.2",
+    "simple-line-icons": "file:"
   }
 }
