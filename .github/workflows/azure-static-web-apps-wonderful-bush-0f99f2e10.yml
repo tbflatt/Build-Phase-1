@@ -36,6 +36,7 @@ jobs:
           app_location: "/"  # App source code path; adjust if necessary
           api_location: ""  # API source code path - optional
           output_location: ""  # No build output directory required
+          deployment_action: "upload"  # Explicitly set the deployment action to upload
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
