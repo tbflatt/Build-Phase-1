@@ -151,19 +151,19 @@
 								</div>
 					  
 								<div class="row">
-								  <div class="form-group col-lg-4">
-									<label class="form-label">City</label>
-									<select class="form-select form-control h-auto py-2" data-msg-required="Please select a city." name="city" required>
-									  <option value="Houston" selected>Houston</option>
-									  <option value="Boca">Boca</option>
-									  <option value="New Orleans">New Orleans</option>
-									  <option value="Chicago">Chicago</option>
-									  <option value="Dallas">Dallas</option>
-									  <option value="Chorpus Christi">Corpus Christi</option>
-									  <option value="Mobile">Mobile</option>
-									  <option value="Milwaukee">Milwaukee</option>
-									</select>
-								  </div>
+									<div class="form-group col-lg-4">
+										<label class="form-label">City</label>
+										<select class="form-select form-control h-auto py-2" data-msg-required="Please select a city." name="city" id="citySelect" required>
+											<option value="Houston" selected>Houston</option>
+											<option value="Boca">Boca</option>
+											<option value="New Orleans">New Orleans</option>
+											<option value="Chicago">Chicago</option>
+											<option value="Dallas">Dallas</option>
+											<option value="Chorpus Christi">Corpus Christi</option>
+											<option value="Mobile">Mobile</option>
+											<option value="Milwaukee">Milwaukee</option>
+										</select>
+									</div>							
 								  <div class="form-group col-lg-4">
 									<label class="form-label mb-1 text-2">Category</label>
 									<select class="form-select form-control h-auto py-2" data-msg-required="Please select a category." name="category" required>
@@ -294,40 +294,83 @@ fileNameField.textContent = '';
 
 		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 		<script type="text/javascript">
-			(function() {
-				// Initialize EmailJS with your specific User ID
-				emailjs.init("KlZdczArD6ZckTFX2"); // Replace with your actual EmailJS User ID
+			// Initialize EmailJS with your User ID
+			(function () {
+			  emailjs.init("KlZdczArD6ZckTFX2");
+			  console.log("EmailJS initialized");
 			})();
-		</script>
-		
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				const form = document.querySelector('.contact-form');
-				form.addEventListener('submit', function(event) {
-					event.preventDefault(); // Prevent the native form submission.
-		
-					// Check if file input exists and a file is selected, but do not block submission if no file is present
-					var fileInput = document.getElementById('fileUpload');
-					if (fileInput && fileInput.files.length === 0) {
-						console.log('No file attached, but submission continues because file is optional.');
+		  
+			document.addEventListener("DOMContentLoaded", function () {
+			  console.log("DOM fully loaded and parsed");
+		  
+			  const form = document.querySelector(".contact-form");
+			  const citySelect = document.getElementById("citySelect");
+		  
+			  if (!form) {
+				console.error("Form not found");
+				return;
+			  }
+		  
+			  let selectedTemplate = "template_0fzz3kb"; // Default template
+		  
+			  // Update template based on city selection
+			  citySelect.addEventListener("change", function (event) {
+				const selectedCity = event.target.value.trim(); // Trim to avoid leading/trailing spaces
+				console.log(`City selected: "${selectedCity}"`);
+		  
+				if (selectedCity === "Boca") {
+					selectedTemplate = "template_lo8ia1y";
+				  } else if (selectedCity === "Houston") {
+					selectedTemplate = "template_4la7t3g";
+				  } else if (selectedCity === "Chicago") {
+					selectedTemplate = "template_dwl6b5s";
+				  } else if (selectedCity === "New Orleans") {
+					selectedTemplate = "template_mbpymec"; // New Orleans template
+				  } else {
+					selectedTemplate = "template_0fzz3kb"; // Default template
+				  }
+		  
+				console.log(`Template set to: ${selectedTemplate}`);
+			  });
+		  
+			  // Handle form submission
+			  form.addEventListener("submit", function (event) {
+				event.preventDefault();
+				console.log("Submit event triggered");
+		  
+				const fileInput = document.getElementById('fileUpload');
+				if (fileInput.files.length > 0) {
+				  console.log("File is attached, sending form with EmailJS.");
+				} else {
+				  console.log("No file attached, sending form with EmailJS.");
+				}
+		  
+				emailjs
+				  .sendForm("service_7xc0ocs", selectedTemplate, this)
+				  .then(
+					function (response) {
+					  console.log("SUCCESS!", response.status, response.text);
+					  alert("Email sent successfully!");
+					  document.querySelector(".contact-form-success").classList.remove("d-none");
+					  document.querySelector(".contact-form-error").classList.add("d-none");
+					},
+					function (error) {
+					  console.error("FAILED...", error);
+					  alert("Failed to send email: " + error.text);
+					  document.querySelector(".contact-form-error").classList.remove("d-none");
+					  document.querySelector(".contact-form-success").classList.add("d-none");
+					  document.querySelector(".mail-error-message").textContent = error.text;
 					}
-		
-					// Sending the form data to EmailJS using the specified service ID and template ID
-					emailjs.sendForm('service_7xc0ocs', 'template_0fzz3kb', this)
-					.then(function(response) {
-						console.log('SUCCESS!', response.status, response.text);
-						alert('Email sent successfully!');
-						document.querySelector(".contact-form-success").classList.remove("d-none");
-						document.querySelector(".contact-form-error").classList.add("d-none");
-					}, function(error) {
-						console.log('FAILED...', error);
-						alert('Failed to send email: ' + error.text);
-						document.querySelector(".contact-form-error").classList.remove("d-none");
-						document.querySelector(".contact-form-success").classList.add("d-none");
-						document.querySelector(".mail-error-message").textContent = error.text;
-					});
-				});
+				  );
+			  });
 			});
-		</script>
+		  
+			function updateFileName() {
+			  const fileInput = document.getElementById('fileUpload');
+			  const fileName = fileInput.files[0] ? fileInput.files[0].name : '';
+			  document.getElementById('fileUploadName').textContent = fileName;
+			}
+		  </script>
+		  
 	</body>
 </html>
