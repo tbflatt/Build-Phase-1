@@ -46,57 +46,17 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-
-    <!-- SheetJS Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
-
     <style>
-        .centered-iframe {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Adjust this if needed */
-            padding: 20px; /* Adds padding around the iframe */
-        }
-        iframe {
-            border: 2px solid #ccc; /* Adds a border around the iframe */
-            border-radius: 10px; /* Rounds the corners of the border */
-        }
+        /* Optional styling for the container */
         .sheet-container {
             margin: 20px auto;
             width: 90%;
-            overflow-x: auto;
+            text-align: center;
         }
     </style>
-
-    <style>
-        .sheet-container {
-            margin: 0 auto;
-            width: 80%; /* Adjust the width as needed */
-            text-align: center;
-        }
-        .tab-content {
-            padding-top: 20px;
-        }
-        .nav-tabs {
-            justify-content: center;
-            display: flex;
-        }
-        .nav-item {
-            margin-bottom: -1px;
-        }
-        table {
-            margin: 0 auto;
-            text-align: center;
-        }
-        td, th {
-            text-align: center;
-            vertical-align: middle;
-        }
-    </style>
- 
 
 </head>
 <body data-plugin-page-transition>
@@ -163,37 +123,41 @@
             </div>
         </header>
 
+        <!-- Replace old spreadsheet code with the new i-frame -->
         <section class="sheet-container">
-            <!-- Tabs Navigation -->
-            <ul class="nav nav-tabs justify-content-center" id="sheetTabs" role="tablist"></ul>
-            
-            <!-- Tabs Content -->
-            <div class="tab-content" id="sheetContent"></div>
+            <iframe 
+                width="700" 
+                height="600" 
+                frameborder="0" 
+                scrolling="no"
+                src="https://sbsblaw-my.sharepoint.com/personal/sschouest_sbsb-eastham_com/_layouts/15/Doc.aspx?sourcedoc={1c2be0a5-1ef6-421c-9bfd-6b257beb1202}&action=embedview&AllowTyping=True&ActiveCell='Houston'!B2&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
+            </iframe>
         </section>
         
         <hr class="my-5">
-        
         <hr class="my-5">
 
-        <div class="footer-copyright">
-            <div class="container py-2">
-                <div class="row py-4">
-                    <div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-                        <a href="index.html" class="logo pe-0 pe-lg-3">
-                            <img alt="Porto Website Template" src="SBSB-logo.png" class="opacity-7" height="50">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-                        <p>© SBSB-EASTHAM 2024.</p>
-                    </div>
-                    <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
-                        <div>
-                            <h5>Darkmode/lightmode</h5>
-                            <label class="p-switch switch-color-secondary">
-                                <input type="checkbox" id="modeSwitch" name="switch" checked><span class="p-switch-style"></span>
-                            </label>
+        <footer>
+            <div class="footer-copyright">
+                <div class="container py-2">
+                    <div class="row py-4">
+                        <div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
+                            <a href="index.html" class="logo pe-0 pe-lg-3">
+                                <img alt="Porto Website Template" src="SBSB-logo.png" class="opacity-7" height="50">
+                            </a>
                         </div>
-                    </div>						
+                        <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+                            <p>© SBSB-EASTHAM 2024.</p>
+                        </div>
+                        <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
+                            <div>
+                                <h5>Darkmode/lightmode</h5>
+                                <label class="p-switch switch-color-secondary">
+                                    <input type="checkbox" id="modeSwitch" name="switch" checked><span class="p-switch-style"></span>
+                                </label>
+                            </div>
+                        </div>						
+                    </div>
                 </div>
             </div>
         </footer>
@@ -201,77 +165,24 @@
     
     <!-- Vendor -->
     <script src="vendor/plugins/js/plugins.min.js"></script>
-
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
-
     <!-- Circle Flip Slideshow Script -->
     <script src="vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
     <!-- Current Page Views -->
     <script src="js/views/view.home.js"></script>
-
     <!-- Theme Custom -->
     <script src="js/custom.js"></script>
-
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
-
+    
     <!-- Scroll top -->
     <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
     
-    <!-- Scripts to enable tabs -->
+    <!-- Scripts for Bootstrap (optional for other site features) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    
-    <script>
-        const filePath = 'ext/elist924.xlsx'; // Path to your spreadsheet
-    
-        fetch(filePath)
-        .then(response => response.arrayBuffer())
-        .then(data => {
-            const workbook = XLSX.read(data, { type: 'array' });
-    
-            const sheetTabs = document.getElementById('sheetTabs');
-            const sheetContent = document.getElementById('sheetContent');
-    
-            // Loop through all sheets in the workbook and render each one as a separate tab
-            workbook.SheetNames.forEach((sheetName, index) => {
-                const worksheet = workbook.Sheets[sheetName];
-    
-                // Filter out column E (and any others beyond D)
-                for (let key in worksheet) {
-                    const col = key.replace(/[0-9]/g, ''); // Get the column letter
-                    if (col >= 'E') { // Hide columns E and beyond
-                        delete worksheet[key];
-                    }
-                }
-    
-                const html = XLSX.utils.sheet_to_html(worksheet);
-    
-                // Create a tab for each sheet
-                const tab = document.createElement('li');
-                tab.className = 'nav-item';
-                tab.innerHTML = `
-                    <a class="nav-link ${index === 0 ? 'active' : ''}" id="tab-${index}" data-toggle="tab" href="#sheet-${index}" role="tab" aria-controls="sheet-${index}" aria-selected="${index === 0}">
-                        ${sheetName}
-                    </a>
-                `;
-                sheetTabs.appendChild(tab);
-    
-                // Create the content section for each sheet
-                const content = document.createElement('div');
-                content.className = `tab-pane fade ${index === 0 ? 'show active' : ''}`;
-                content.id = `sheet-${index}`;
-                content.role = 'tabpanel';
-                content.innerHTML = html;
-                sheetContent.appendChild(content);
-            });
-        })
-        .catch(error => console.error('Error loading spreadsheet:', error));
-    </script>
-    
 
 </body>
 </html>
