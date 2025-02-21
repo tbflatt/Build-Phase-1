@@ -57,6 +57,7 @@
             height: auto; /* Maintain aspect ratio */
         }
 
+        /* The following pan/zoom styles can remain or be removed if no longer needed */
         .panzoom-container {
             position: relative;
             overflow: hidden;
@@ -150,28 +151,21 @@
         </header>
         <hr class="my-5">
 
-        <!-- Image Container with Zoom and Pan -->
+        <!-- Organizational Chart Embed -->
         <div class="container text-center my-5">
-            <div class="panzoom-container">
-                <img id="panzoomImage" src="img/ed-team/orgchart2.png" alt="ED Team Org Chart">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+             padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+             border-radius: 8px; will-change: transform;">
+              <iframe loading="lazy"
+                      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                      src="https://www.canva.com/design/DAGIa-SJbaw/sPd155DQZ3Q_i_0ohhC-MQ/view?embed"
+                      allowfullscreen="allowfullscreen" allow="fullscreen">
+              </iframe>
             </div>
+            <a href="https://www.canva.com/design/DAGIa-SJbaw/sPd155DQZ3Q_i_0ohhC-MQ/view?utm_content=DAGIa-SJbaw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+               target="_blank" rel="noopener"
+            >SBSB Organizational Chart</a> by Jmcclendon
         </div>
-
-        <!-- Zoom and Reset Controls -->
-        <div class="controls">
-            <label for="zoomRange">Zoom:</label>
-            <input type="range" id="zoomRange" min="1" max="8" step="0.01" value="1">
-            <button id="resetButton" class="btn btn-secondary">Reset Image</button>
-        </div>
-
-		        <!-- Additional Content Underneath -->
-				<div class="text-center mt-4">
-					<p>
-						<a href="https://www.canva.com/design/DAGIa-SJbaw/sPd155DQZ3Q_i_0ohhC-MQ/view?utm_content=DAGIa-SJbaw&utm_campaign=designshare&utm_medium=embeds&utm_source=link" 
-						   target="_blank" rel="noopener">SBSB Organizational Chart</a> by Jmcclendon
-					</p>
-				</div>
-				
 
         <hr class="my-5">
 
@@ -233,58 +227,5 @@
     <script src='plugins/moment/moment.min.js'></script>
     <script src='plugins/fullcalendar/fullcalendar.min.js'></script>
     <script src='plugins/fullcalendar/gcal.min.js'></script>
-
-    <!-- Custom JS for Zoom, Pan, and Reset -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const zoomRange = document.getElementById('zoomRange');
-            const panzoomImage = document.getElementById('panzoomImage');
-            const resetButton = document.getElementById('resetButton');
-            let scale = 1;
-            let originX = 0;
-            let originY = 0;
-            let startX, startY;
-            let isPanning = false;
-
-            // Zoom functionality
-            zoomRange.addEventListener('input', function () {
-                scale = parseFloat(this.value);
-                panzoomImage.style.transform = `scale(${scale}) translate(${originX}px, ${originY}px)`;
-            });
-
-            // Start panning
-            panzoomImage.addEventListener('mousedown', function (e) {
-                e.preventDefault();
-                isPanning = true;
-                startX = e.clientX - originX;
-                startY = e.clientY - originY;
-                panzoomImage.style.cursor = 'grabbing';
-            });
-
-            // Pan the image
-            document.addEventListener('mousemove', function (e) {
-                if (!isPanning) return;
-                originX = e.clientX - startX;
-                originY = e.clientY - startY;
-                panzoomImage.style.transform = `scale(${scale}) translate(${originX}px, ${originY}px)`;
-            });
-
-            // Stop panning
-            document.addEventListener('mouseup', function () {
-                isPanning = false;
-                panzoomImage.style.cursor = 'grab';
-            });
-
-            // Reset the image
-            resetButton.addEventListener('click', function () {
-                scale = 1;
-                originX = 0;
-                originY = 0;
-                zoomRange.value = scale;
-                panzoomImage.style.transform = `scale(${scale}) translate(${originX}px, ${originY}px)`;
-            });
-        });
-    </script>
-
 </body>
 </html>
