@@ -58,22 +58,25 @@
             margin-top: 20px;
         }
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            padding: 20px;
-        }
-        .gallery img {
-            width: 200px;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
+  display: grid;
+  /* Exactly 5 columns across */
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;     /* Let the grid cell define the width */
+  height: auto;    /* Maintain aspect ratio */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
     </style>
 </head>
 <body data-plugin-page-transition>
@@ -153,8 +156,6 @@
 				</div>
 			</div>
 		</header>
-
-		<body>
 
 			<h2>Google Drive Image Gallery</h2>
 			<div class="gallery">
@@ -286,9 +287,7 @@
 				<img src="https://drive.google.com/uc?export=view&id=1J6TKEtAfSFvatSJyXACCn9fCb0o22UdB" />
 				<img src="https://drive.google.com/uc?export=view&id=1onSAVa-PfQhHB28K7X8YjSTZVJb62uCj" />
 				<img src="https://drive.google.com/uc?export=view&id=1vSP-hbcXeuzlr121ibXiDutCqVRukPcd" />
-		    </div>
-
-		</body>		
+		    </div>	
 	  
 
 		<hr class="my-5">
