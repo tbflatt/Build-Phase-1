@@ -54,82 +54,27 @@
 			height: auto; /* Maintain aspect ratio */
 		}
 
-		/* Gallery Grid Layout */
-		.gallery-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			gap: 15px;
-			padding: 20px;
-		}
-
-		.gallery-item img {
-			width: 100%;
-			height: auto;
-			border-radius: 8px;
-			transition: transform 0.3s ease;
-		}
-
-		.gallery-item img:hover {
-			transform: scale(1.05);
-		}
-
-		.gallery-title {
-			text-align: center;
-			font-size: 2.5rem;
-			margin: 40px 0 20px;
-			color: #d9534f;
-		}
-
-		/* Lightbox Styles */
-		.lightbox {
-			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.9);
-			justify-content: center;
-			align-items: center;
-			z-index: 1000;
-		}
-
-		.lightbox img {
-			max-width: 90%;
-			max-height: 90%;
-			border-radius: 8px;
-		}
-
-		.lightbox-close,
-		.lightbox-prev,
-		.lightbox-next {
-			position: absolute;
-			color: white;
-			font-size: 2rem;
-			cursor: pointer;
-		}
-
-		.lightbox-close {
-			top: 20px;
-			right: 20px;
-		}
-
-		.lightbox-prev {
-			left: 20px;
-		}
-
-		.lightbox-next {
-			right: 20px;
-		}
-
-		.gallery-item img {
-			width: 100%;
-			height: auto;
-			border-radius: 8px;
-			transition: transform 0.3s ease;
-			cursor: pointer; /* Ensures the pointer icon shows on hover */
-		}
-	</style>
+        h2 {
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body data-plugin-page-transition>
 	<div class="body">
