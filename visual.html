@@ -58,6 +58,36 @@
 				height: auto; /* Maintain aspect ratio */
 			}
 		</style>
+		
+		
+		<style>
+
+			.gallery {
+   				 display: flex;
+   				 gap: 30px; /* space between columns */
+ 			 }
+
+  				/* Each column is half the container width */
+  			.gallery-col {
+    			width: 50%;
+ 			 }
+
+			/* Ensure images show a normal cursor, not magnifying glass */
+			.gallery img {
+			  cursor: default; /* or 'auto' */
+			}
+		  
+			/* For each entry, we do a flex row: thumbnail left, name right */
+			.gallery-entry {
+			  display: flex;
+			  align-items: center;
+			  margin-bottom: 10px;
+			}
+		  
+			.gallery-entry img {
+			  margin-right: 10px;
+			}
+		  </style>
 
 	</head>
 	<body data-plugin-page-transition>
@@ -128,24 +158,154 @@
 					</div>
 				</div>
 			</header>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-6 text-center">
-						<h4>Visual Directory</h4>
-						<div class="progress mb-2">
-							<div class="progress-bar progress-bar-primary progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-								<span class="sr-only">70% Complete</span>
-							</div>
-						</div>
-					</div>
+
+			<div class="container mt-3">
+				<div class="btn-group d-flex justify-content-center flex-wrap" role="group" aria-label="Office Locations">
+					<button type="button" class="btn btn-primary m-1" onclick="showOffice('boca')">Boca Raton</button>
+					<button type="button" class="btn btn-primary m-1" onclick="showOffice('chicago')">Chicago</button>
+					<button type="button" class="btn btn-primary m-1" onclick="showOffice('houston')">Houston</button>
+					<button type="button" class="btn btn-primary m-1" onclick="showOffice('neworleans')">New Orleans</button>
+					<button type="button" class="btn btn-primary m-1" onclick="showOffice('corpus')">Corpus Christi</button>
+					<button type="button" class="btn btn-primary m-1" onclick="showOffice('dallas')">Dallas</button>
+					<button type="button" class="btn btn-primary m-1" onclick="showOffice('galveston')">Galveston</button>
 				</div>
 			</div>
 			
-
-
-
-
-
+			<div class="container mt-4">
+				<div id="boca" class="office-directory">
+					<h3>Boca Raton Office</h3>
+					<div class="gallery">
+						<!-- LEFT COLUMN -->
+						<div class="gallery-col">
+						  <!-- (1) Bianca Thervil -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1NDUBHcaaW4UCNS5VW65EOZ4WDKar7hae&sz=w380" alt="Bianca Thervil" />
+							<span>Bianca Thervil</span>
+						  </div>
+					  
+						  <!-- (2) Charlsie Rubenstein -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1wi8IdJW-K87y27joS-QVuaZVhEzsyL_l&sz=w380" alt="Charlsie Rubenstein" />
+							<span>Charlsie Rubenstein</span>
+						  </div>
+					  
+						  <!-- (3) Cindy Norena -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1KKCcgy03zwPkuhMIlrfFXMTzbovaAGns&sz=w380" alt="Cindy Norena" />
+							<span>Cindy Norena</span>
+						  </div>
+					  
+						  <!-- (4) Danielle Strauss -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1_U-PJ-EM-YVn2uE_4EcWhl0lAGEH5Skr&sz=w380" alt="Danielle Strauss" />
+							<span>Danielle Strauss</span>
+						  </div>
+					  
+						  <!-- (5) Eric Stockel -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1ZxsFgyCAXAQu5KpfdB_ew0WBojLvzFrm&sz=w380" alt="Eric Stockel" />
+							<span>Eric Stockel</span>
+						  </div>
+					  
+						  <!-- (6) Katrina Herrera -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1ScZ09I34xxDuZ2gQRC3ao98UeUE_KojW&sz=w380" alt="Katrina Herrera" />
+							<span>Katrina Herrera</span>
+						  </div>
+					  
+						  <!-- (7) Lisa Torron Bautista -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=10x16GtgU5iZbOKj1of_75-ehF2QAfcW5&sz=w380" alt="Lisa Torron Bautista" />
+							<span>Lisa Torron Bautista</span>
+						  </div>
+					  
+						  <!-- (8) Marina Gonzalez -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1GxhDvr4JKD0vld5WGyXL_Fj-WhBJtCtv&sz=w380" alt="Marina Gonzalez" />
+							<span>Marina Gonzalez</span>
+						  </div>
+						</div> <!-- /.gallery-col -->
+					  
+						<!-- RIGHT COLUMN -->
+						<div class="gallery-col">
+						  <!-- (9) Richard Bogart -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1EvH7AI1LhNpjEXOce1AJGJvdmOqRw6sR&sz=w380" alt="Richard Bogart" />
+							<span>Richard Bogart</span>
+						  </div>
+					  
+						  <!-- (10) Robert Bamdas -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1QTv5mlaKJJH1RNojv82YhD3iEhefT-5J&sz=w380" alt="Robert Bamdas" />
+							<span>Robert Bamdas</span>
+						  </div>
+					  
+						  <!-- (11) Roger Sisser -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1OOImhCC7L7eSYNBq1MGO04rqJUKZ4cHz&sz=w380" alt="Roger Sisser" />
+							<span>Roger Sisser</span>
+						  </div>
+					  
+						  <!-- (12) Ross Rubenstein -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1f8VRhxKKI5uRkwuCDa3osoK2QOEF172U&sz=w380" alt="Ross Rubenstein" />
+							<span>Ross Rubenstein</span>
+						  </div>
+					  
+						  <!-- (13) Ryan Smith -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1Q_CFz6bcNOJuMhwey2yCG5wLeIHmFBQm&sz=w380" alt="Ryan Smith" />
+							<span>Ryan Smith</span>
+						  </div>
+					  
+						  <!-- (14) Terence Bonner -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=178HTJ81w6qXgqdgSgQ_1nBB28dwx0cuu&sz=w380" alt="Terence Bonner" />
+							<span>Terence Bonner</span>
+						  </div>
+					  
+						  <!-- (15) Thomas Faragoi -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1VuxSb8Hg_9ppkPBROzOsfwTfRJI4HRTr&sz=w380" alt="Thomas Faragoi" />
+							<span>Thomas Faragoi</span>
+						  </div>
+					  
+						  <!-- (16) Yolando Hewling -->
+						  <div class="gallery-entry">
+							<img src="https://drive.google.com/thumbnail?id=1RM7Z610TWqC2HzRyFkpWRUQdm0jidVea&sz=w380" alt="Yolando Hewling" />
+							<span>Yolando Hewling</span>
+						  </div>
+						</div> 
+					  
+					  </div>
+					  
+				</div>
+				<div id="chicago" class="office-directory d-none">
+					<h3>Chicago Office</h3>
+					<!-- Headshots and names go here -->
+				</div>
+				<div id="houston" class="office-directory d-none">
+					<h3>Houston Office</h3>
+					<!-- Headshots and names go here -->
+				</div>
+				<div id="neworleans" class="office-directory d-none">
+					<h3>New Orleans Office</h3>
+					<!-- Headshots and names go here -->
+				</div>
+				<div id="corpus" class="office-directory d-none">
+					<h3>Corpus Christi Office</h3>
+					<!-- Headshots and names go here -->
+				</div>
+				<div id="dallas" class="office-directory d-none">
+					<h3>Dallas Office</h3>
+					<!-- Headshots and names go here -->
+				</div>
+				<div id="galveston" class="office-directory d-none">
+					<h3>Galveston Office</h3>
+					<!-- Headshots and names go here -->
+				</div>
+			</div>
+			
         </section>
 				
 				<hr class="my-5">
@@ -207,6 +367,14 @@
         <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
         <script src="js/examples/examples.gallery.js"></script>
 
+		<script>
+			function showOffice(officeId) {
+				document.querySelectorAll('.office-directory').forEach(div => {
+					div.classList.add('d-none');
+				});
+				document.getElementById(officeId).classList.remove('d-none');
+			}
+		</script>
 		
 
 
