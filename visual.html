@@ -52,42 +52,52 @@
 				height: auto;
 				transition: width 0.3s, height 0.3s;
 			}
-	
+		
 			#header.header-effect-shrink .header-logo img {
 				width: 90px; /* Adjust the sticky width */
 				height: auto; /* Maintain aspect ratio */
 			}
 		</style>
 		
-		
 		<style>
-
 			.gallery {
-   				 display: flex;
-   				 gap: 30px; /* space between columns */
- 			 }
-
-  				/* Each column is half the container width */
-  			.gallery-col {
-    			width: 50%;
- 			 }
-
+				display: flex;
+				gap: 30px; /* space between columns */
+			}
+		
+			/* Each column is half the container width */
+			.gallery-col {
+				width: 50%;
+			}
+		
 			/* Ensure images show a normal cursor, not magnifying glass */
 			.gallery img {
-			  cursor: default; /* or 'auto' */
+				cursor: default; /* or 'auto' */
 			}
-		  
+			
 			/* For each entry, we do a flex row: thumbnail left, name right */
 			.gallery-entry {
-			  display: flex;
-			  align-items: center;
-			  margin-bottom: 10px;
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
 			}
-		  
+			
 			.gallery-entry img {
-			  margin-right: 10px;
+				margin-right: 10px;
 			}
-		  </style>
+		
+			/* Responsive behavior for mobile */
+			@media (max-width: 768px) {
+				.gallery {
+					flex-direction: column;
+				}
+		
+				.gallery-col {
+					width: 100%;
+				}
+			}
+		</style>
+		
 
 	</head>
 	<body data-plugin-page-transition>
