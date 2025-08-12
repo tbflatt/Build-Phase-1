@@ -130,140 +130,140 @@
 			</header>
 
 	
-			<div class="card mb-4">
-				<div class="card-body">
-					<div class="row">
-						<div class="col">
-							  <form class="contact-form" action="php/contact-form.php" method="POST">
-								<div class="contact-form-success alert alert-success d-none mt-4">
-									<strong>Success!</strong> Your message has been sent to us.
-								</div>
-					  
-								<div class="contact-form-error alert alert-danger d-none mt-4">
-								  <strong>Error!</strong> There was an error sending your message.
-								  <span class="mail-error-message text-1 d-block"></span>
-								</div>
-					  
-								<div class="row">
-								  <div class="form-group col-lg-4">
-									<label class="form-label mb-1 text-2">Full Name</label>
-									<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
-								  </div>
-								  <div class="form-group col-lg-4">
-									<label class="form-label mb-1 text-2">Email Address</label>
-									<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
-								  </div>
-								  <div class="form-group col-lg-4">
-									<label class="form-label mb-1 text-2">Reserved For</label>
-									<input type="Meeting Group" value="" data-msg-required="Who or what group will be using the room." data-msg-email="Please enter a person or group." maxlength="100" class="form-control text-3 h-auto py-2" name="Meeting Group" required>
-								  </div>
-								</div>
-					  
-								<div class="row">
-									<div class="form-group col-lg-4">
-										<label class="form-label">Conf Room</label>
-										<select class="form-select form-control h-auto py-2" data-msg-required="Please select a conference room." name="conf_room" required>
-										  <option value="11th_small">11th Floor - Small Conf Room</option>
-										  <option value="11th_medium">11th Floor - Medium Conf Room</option>
-										  <option value="11th_large">11th Floor - Large Conf Room</option>
-										  <option value="12th_small">12th Floor - Small Conf Room</option>
-										  <option value="12th_medium">12th Floor - Medium Conf Room</option>
-										  <option value="12th_large">12th Floor - Large Conf Room</option>
-										  <option value="14th_small">14th Floor - Small Conf Room</option>
-										  <option value="14th_medium">14th Floor - Medium Conf Room</option>
-										  <option value="14th_large">14th Floor - Large Conf Room</option>
-										  <option value="3rd_large">3rd Floor - Large Conf Room</option>
-										</select>
-									  </div>
-									  <div class="form-group col-lg-4">
-										<label class="form-label mb-1 text-2">Reason for Meeting</label>
-										<input type="text" data-msg-required="Please enter a reason." maxlength="100" class="form-control text-3 h-auto py-2" name="reason" required>
-									  </div>
-									  <div class="form-group col-lg-4">
-										<label class="form-label">Video Conf.</label>
-										<select class="form-select form-control h-auto py-2" data-msg-required="Please select a video conference option." name="video_conf" required>
-										  <option value="None" selected>None</option>
-										  <option value="Teams">Teams</option>
-										  <option value="Zoom">Zoom</option>
-										</select>
-									  </div>
-																		
-								</select>
-								<div class="row">
-									<div class="form-group col-lg-4">
-									  <label class="form-label mb-1 text-2">Extension/Phone</label>
-									  <input type="text" value="" data-msg-required="Please enter your number." maxlength="20" class="form-control text-3 h-auto py-2" name="phone" required>
-									</div>
-									<div class="form-group col-lg-2">
-									  <label class="form-label mb-1 text-2">Number of People</label>
-									  <input class="form-control text-3 h-auto py-2" type="number" value="1" name="number" id="example-number-input" min="1" max="50">
-									</div>
-									<div class="form-group col-lg-2">
-										<label class="form-label mb-1 text-2">Date and Time</label>
-										<input class="form-control text-3 h-auto py-2" type="datetime-local" name="datetime" id="example-datetime-local-input">
-									</div>
-								  <div class="form-group col-lg-2">
-									<label class="form-label mb-1 text-2">Time Needed</label>
-									<input type="text" data-msg-required="Please enter a reason." maxlength="100" class="form-control text-3 h-auto py-2" name="reason" required>
-								  </div>
-								  <div class="form-group col-lg-2">
-									<label class="form-label">Food</label>
-									<select class="form-select form-control h-auto py-2" data-msg-required="Please select a food option." name="food" required>
-									  <option value="No" selected>No</option>
-									  <option value="Yes">Yes</option>
-									</select>
-								  </div>
-								  
+<div class="card mb-4">
+  <div class="card-body">
+    <div class="row">
+      <div class="col">
+        <form id="conf-form" class="contact-form" action="php/contact-form.php" method="POST">
+          <div class="contact-form-success alert alert-success d-none mt-4">
+            <strong>Success!</strong> Your message has been sent to us.
+          </div>
 
-								<div class="row">
-								  <div class="form-group col">
-									<label class="form-label mb-1 text-2">Message</label>
-									<textarea maxlength="2000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" required></textarea>
-								  </div>
-								</div>
-					  
-								<div class="row">
-								  <div class="form-group col">
-									<div class="form-check">
-									  <input class="form-check-input" type="checkbox" value="" name="agree" id="tabContent10Checkbox" data-msg-required="You must agree before submitting." required>
-									  <label class="form-check-label" for="tabContent10Checkbox">
-										Agree to terms and conditions
-									  </label>
-									</div>
-								  </div>
-								</div>
-					  
-								<div class="row">
-									<div class="form-group col">
-									  <input type="submit" value="Submit Form" class="btn btn-primary" data-loading-text="Loading...">
-									  <button type="button" class="btn btn-primary" onclick="document.getElementById('fileUpload').click();">Attachment</button>
-									  <input type="file" id="fileUpload" name="attachment" style="display:none;" onchange="updateFileName()" data-msg-required="Please attach your file." accept=".doc,.docx,.pdf,.txt,.jpg,.jpeg,.png,.gif" data-msg-size="The file must be less than 20MB.">
-									  <span id="fileUploadName"></span>
-									</div>
-								</div>
-							  </form>
-							</div>
-						  </div>
-						</div>
-					  </div>
+          <div class="contact-form-error alert alert-danger d-none mt-4">
+            <strong>Error!</strong> There was an error sending your message.
+            <span class="mail-error-message text-1 d-block"></span>
+          </div>
 
+          <div class="row">
+            <div class="form-group col-lg-4">
+              <label class="form-label mb-1 text-2">Full Name</label>
+              <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
+            </div>
+            <div class="form-group col-lg-4">
+              <label class="form-label mb-1 text-2">Email Address</label>
+              <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
+            </div>
+            <div class="form-group col-lg-4">
+              <label class="form-label mb-1 text-2">Reserved For</label>
+              <input type="text" value="" data-msg-required="Who or what group will be using the room." maxlength="100" class="form-control text-3 h-auto py-2" name="meeting_group" required>
+            </div>
+          </div>
 
-	
-					<div class="footer-copyright">
-						<div class="container py-2">
-							<div class="row py-4">
-								<div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-									<a href="index.html" class="logo pe-0 pe-lg-3">
-										<img alt="Porto Website Template" src="SBSB-logo.png" class="opacity-7" height="50">
-									</a>
-								</div>
-								<div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-									<p>SBSB-EASTHAM 2025</p>
-								</div>
-								<div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
-								</div>	
-							</div>
-						</div>
+          <div class="row">
+            <div class="form-group col-lg-4">
+              <label class="form-label">Conf Room</label>
+              <select class="form-select form-control h-auto py-2" data-msg-required="Please select a conference room." name="conf_room" required>
+                <option value="11th_small">11th Floor - Small Conf Room</option>
+                <option value="11th_medium">11th Floor - Medium Conf Room</option>
+                <option value="11th_large">11th Floor - Large Conf Room</option>
+                <option value="12th_small">12th Floor - Small Conf Room</option>
+                <option value="12th_medium">12th Floor - Medium Conf Room</option>
+                <option value="12th_large">12th Floor - Large Conf Room</option>
+                <option value="14th_small">14th Floor - Small Conf Room</option>
+                <option value="14th_medium">14th Floor - Medium Conf Room</option>
+                <option value="14th_large">14th Floor - Large Conf Room</option>
+                <option value="3rd_large">3rd Floor - Large Conf Room</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-4">
+              <label class="form-label mb-1 text-2">Reason for Meeting</label>
+              <input type="text" data-msg-required="Please enter a reason." maxlength="100" class="form-control text-3 h-auto py-2" name="reason" required>
+            </div>
+            <div class="form-group col-lg-4">
+              <label class="form-label">Video Conf.</label>
+              <select class="form-select form-control h-auto py-2" data-msg-required="Please select a video conference option." name="video_conf" required>
+                <option value="None" selected>None</option>
+                <option value="Teams">Teams</option>
+                <option value="Zoom">Zoom</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-lg-4">
+              <label class="form-label mb-1 text-2">Extension/Phone</label>
+              <input type="text" value="" data-msg-required="Please enter your number." maxlength="20" class="form-control text-3 h-auto py-2" name="phone" required>
+            </div>
+            <div class="form-group col-lg-2">
+              <label class="form-label mb-1 text-2">Number of People</label>
+              <input class="form-control text-3 h-auto py-2" type="number" value="1" name="number" id="example-number-input" min="1" max="50">
+            </div>
+            <div class="form-group col-lg-2">
+              <label class="form-label mb-1 text-2">Date and Time</label>
+              <input class="form-control text-3 h-auto py-2" type="datetime-local" name="datetime" id="example-datetime-local-input">
+            </div>
+            <div class="form-group col-lg-2">
+              <label class="form-label mb-1 text-2">Time Needed</label>
+              <input type="text" data-msg-required="Please enter how long you need the room." maxlength="100" class="form-control text-3 h-auto py-2" name="time_needed" required>
+            </div>
+            <div class="form-group col-lg-2">
+              <label class="form-label">Food</label>
+              <select class="form-select form-control h-auto py-2" data-msg-required="Please select a food option." name="food" required>
+                <option value="No" selected>No</option>
+                <option value="Yes">Yes</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col">
+              <label class="form-label mb-1 text-2">Message</label>
+              <textarea maxlength="2000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" required></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" name="agree" id="tabContent10Checkbox" data-msg-required="You must agree before submitting." required>
+                <label class="form-check-label" for="tabContent10Checkbox">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col">
+              <input type="submit" value="Submit Form" class="btn btn-primary" data-loading-text="Loading...">
+              <button type="button" class="btn btn-primary" onclick="document.getElementById('fileUpload').click();">Attachment</button>
+              <input type="file" id="fileUpload" name="attachment" style="display:none;" onchange="updateFileName()" data-msg-required="Please attach your file." accept=".doc,.docx,.pdf,.txt,.jpg,.jpeg,.png,.gif" data-msg-size="The file must be less than 20MB.">
+              <span id="fileUploadName"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-copyright">
+  <div class="container py-2">
+    <div class="row py-4">
+      <div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
+        <a href="index.html" class="logo pe-0 pe-lg-3">
+          <img alt="Porto Website Template" src="SBSB-logo.png" class="opacity-7" height="50">
+        </a>
+      </div>
+      <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+        <p>SBSB-EASTHAM 2025</p>
+      </div>
+      <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
+      </div>
+    </div>
+  </div>
+</div>
+
 					</footer>
 				</div>
 
@@ -340,6 +340,58 @@ fileNameField.textContent = '';
 				input.min = `${year}-${month}-${day}T${hours}:${minutes}`;
 			});
 			</script>
+
+			<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("KlZdczArD6ZckTFX2"); // your public key
+    console.log("EmailJS initialized");
+  })();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("conf-form");
+    const successBox = document.querySelector(".contact-form-success");
+    const errorBox = document.querySelector(".contact-form-error");
+    const errorMsg = document.querySelector(".mail-error-message");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Optional: show loading state on submit button
+      const btn = form.querySelector('input[type="submit"]');
+      const prev = btn.value;
+      btn.disabled = true;
+      btn.value = "Sending...";
+
+      emailjs.sendForm("service_7xc0ocs", "template_dl8yk0i", form)
+        .then(function (res) {
+          console.log("SUCCESS!", res.status, res.text);
+          successBox.classList.remove("d-none");
+          errorBox.classList.add("d-none");
+          form.reset();
+          document.getElementById('fileUploadName').textContent = "";
+        })
+        .catch(function (err) {
+          console.error("FAILED...", err);
+          errorBox.classList.remove("d-none");
+          successBox.classList.add("d-none");
+          errorMsg.textContent = err?.text || "Unknown error";
+        })
+        .finally(function () {
+          btn.disabled = false;
+          btn.value = prev;
+        });
+    });
+  });
+
+  function updateFileName() {
+    const upload = document.getElementById('fileUpload');
+    const fileNameField = document.getElementById('fileUploadName');
+    fileNameField.textContent = upload.files.length ? ' ' + upload.files[0].name + ' uploaded' : '';
+  }
+</script>
 
 			
 
