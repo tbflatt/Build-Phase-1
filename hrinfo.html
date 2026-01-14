@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SBSB | PTO & Health Insurance</title>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/theme-elements.css">
+  <link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <style>
+    .section-title { display:flex; align-items:center; gap:.75rem; margin-bottom:0; }
+    .section-title i { opacity:.85; }
+    .pill-nav .btn { border-radius:999px; }
+    .muted-note { color: rgba(0,0,0,.65); }
+    .pdf-embed {
+      width: 100%;
+      height: 720px;
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: .5rem;
+      overflow: hidden;
+      background: #fff;
+    }
+    .sticky-jump {
+      position: sticky;
+      top: 90px; /* adjust if your sticky header differs */
+      z-index: 10;
+    }
+    .table td, .table th { vertical-align: middle; }
+  </style>
+</head>
+
+<body>
+<div class="body">
+
+  <!-- Paste your existing header/nav here if desired -->
+
+  <div role="main" class="main">
+    <section class="page-header page-header-modern page-header-md bg-color-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <h1 class="text-8 font-weight-bold mb-0">PTO & Health Insurance</h1>
+            <p class="mb-0 muted-note">Quick answers + links to official plan documents.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container py-4">
+
+      <!-- Jump buttons + PDF quick links -->
+      <div class="card mb-4 sticky-jump">
+        <div class="card-body py-3">
+          <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center">
+            <div class="pill-nav d-flex flex-wrap gap-2">
+              <a class="btn btn-outline-primary btn-sm" href="#pto">
+                <i class="fas fa-calendar-check me-1"></i> PTO
+              </a>
+              <a class="btn btn-outline-primary btn-sm" href="#benefits">
+                <i class="fas fa-heartbeat me-1"></i> Health Insurance
+              </a>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2">
+              <!-- PDFs stored in mf-info folder -->
+              <a class="btn btn-light btn-sm border" href="mf-info/SBSB 2025-2026 Employee Benefit Guide.pdf" target="_blank" rel="noopener">
+                <i class="far fa-file-pdf me-1"></i> Benefit Guide (PDF)
+              </a>
+              <a class="btn btn-light btn-sm border" href="mf-info/Digital ID Card Flyer.pdf" target="_blank" rel="noopener">
+                <i class="far fa-id-card me-1"></i> Digital ID Card (PDF)
+              </a>
+              <a class="btn btn-light btn-sm border" href="mf-info/SBSB_Employer-Employee Contributions_Eff 6.1.2025.pdf" target="_blank" rel="noopener">
+                <i class="far fa-file-pdf me-1"></i> Contributions (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== PTO SECTION ===================== -->
+      <div id="pto" class="card mb-4">
+        <div class="card-body">
+          <h2 class="section-title text-6">
+            <i class="fas fa-calendar-check text-primary"></i>
+            Paid Time Off (PTO)
+          </h2>
+          <p class="muted-note mb-3">Eligibility, accrual, requesting time off, and payout rules.</p>
+
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="alert alert-info mb-3">
+                <strong>Important:</strong> PTO does not post until the <strong>last day of the month</strong>. Earned PTO hours appear on the last paycheck of the month.
+              </div>
+
+              <div class="mb-3">
+                <p class="mb-2">
+                  All full- and part-time employees are eligible for PTO benefits. Part-time employees working
+                  <strong>20–29 hours per week</strong> earn PTO on a prorated basis. Full-time employees work
+                  <strong>30+ hours per week</strong>. PTO accrual begins on the <strong>first day of employment</strong>.
+                  PTO can be used only after it is earned. PTO is not earned during an unpaid leave of absence.
+                </p>
+
+                <p class="mb-2">
+                  To schedule PTO, submit a request <strong>two weeks</strong> before the requested leave. Employees must
+                  ensure they have enough accrued leave available. Requests are approved based on factors including
+                  staffing requirements.
+                </p>
+
+                <p class="mb-2">
+                  PTO is paid at the employee’s base rate at the time the leave is taken. PTO pay is not included in overtime
+                  calculation and does not include incentives/bonuses. If a holiday falls during vacation, that day is charged
+                  to <strong>holiday pay</strong> rather than PTO.
+                </p>
+
+                <p class="mb-0">
+                  If employment is terminated, accrued unused PTO earned through the last day of active employment will
+                  be paid at the employee’s base rate of pay at termination.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card border">
+                <div class="card-body">
+                  <h3 class="text-5 mb-2">PTO Accrual Rates</h3>
+                  <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                      <thead class="bg-light">
+                        <tr>
+                          <th>Tenure</th>
+                          <th>Part-Time (hrs/month)</th>
+                          <th>Full-Time (hrs/month)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>First Year</strong></td>
+                          <td>3.32</td>
+                          <td>6.67</td>
+                        </tr>
+                        <tr>
+                          <td><strong>After 1 Year</strong></td>
+                          <td>5.00</td>
+                          <td>10.00</td>
+                        </tr>
+                        <tr>
+                          <td><strong>After 5 Years</strong></td>
+                          <td>6.67</td>
+                          <td>13.33</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <hr class="my-3">
+
+                  <div class="small muted-note">
+                    Part-time accrual applies to employees working <strong>20–29 hours/week</strong>.
+                    PTO can be used only after it is earned.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /row -->
+        </div>
+      </div>
+
+      <!-- ===================== BENEFITS SECTION ===================== -->
+      <div id="benefits" class="card mb-4">
+        <div class="card-body">
+          <h2 class="section-title text-6">
+            <i class="fas fa-heartbeat text-primary"></i>
+            Health Insurance & Benefits
+          </h2>
+          <p class="muted-note mb-3">
+            Use the buttons below for full plan details. Contributions are embedded for quick reference.
+          </p>
+
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <div class="card border">
+                <div class="card-body">
+                  <h3 class="text-5 mb-2">Plan Documents</h3>
+
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-primary" href="mf-info/SBSB 2025-2026 Employee Benefit Guide.pdf" target="_blank" rel="noopener">
+                      <i class="far fa-file-pdf me-1"></i> Open Employee Benefit Guide
+                    </a>
+
+                    <a class="btn btn-outline-primary" href="mf-info/Digital ID Card Flyer.pdf" target="_blank" rel="noopener">
+                      <i class="far fa-id-card me-1"></i> Open Digital ID Card Flyer
+                    </a>
+
+                    <a class="btn btn-outline-primary" href="mf-info/SBSB_Employer-Employee Contributions_Eff 6.1.2025.pdf" target="_blank" rel="noopener">
+                      <i class="far fa-file-pdf me-1"></i> Open Contributions PDF
+                    </a>
+                  </div>
+
+                  <hr class="my-3">
+
+                  <div class="small muted-note">
+                    If a PDF doesn’t open in-browser, download it or try a different browser. (Some browsers block inline PDFs.)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="card border">
+                <div class="card-body">
+                  <h3 class="text-5 mb-2">Employer / Employee Contributions</h3>
+                  <p class="muted-note mb-3">Embedded for quick viewing.</p>
+
+                  <iframe
+                    class="pdf-embed"
+                    src="mf-info/SBSB_Employer-Employee Contributions_Eff 6.1.2025.pdf#view=FitH"
+                    title="Employer / Employee Contributions PDF">
+                  </iframe>
+
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /row -->
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </div><!-- /main -->
+</div><!-- /body -->
+
+<!-- Vendor -->
+<script src="vendor/plugins/js/plugins.min.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/theme.init.js"></script>
+
+</body>
+</html>

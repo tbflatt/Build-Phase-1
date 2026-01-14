@@ -1,0 +1,23 @@
+Issue/Topic	Office	Responsible Department	Contact	Notes
+Keycard	HOU	Administration	Sara Schouest	
+Keycard	DALLAS			
+Keycard	CORPUS CHRISTI			
+Building Maintenance Request	HOU	Administration	Sara Schouest	
+Building Maintenance Request	Other office	????	????	
+HR Policies	ALL	Human Resources	Melisa Funez, Jordyne Priesmeyer	
+Benefits & 401k	ALL	Human Resources	Melisa Funez, Jordyne Priesmeyer	
+PTO Requests & Bar Licenses	ALL	Human Resources	Melisa Funez, Jordyne Priesmeyer, Sara Schouest, Shane Sarmiento	
+Timesheet Corrections	ALL	Human Resources	Melisa Funez, Jordyne Priesmeyer	
+WestLaw & Law 360 accounts	ALL	Administration	Shannon Block	Subscriptions
+FedEx accounts	ALL	Administration	Shannon Block	
+Harassment Training & State Required Training	ALL	Administration	Shannon Block	
+General Billing Questions	ALL	Billing Dept	billing@sbsblaw.com	
+Vendor/payment status, bar dues, new client forms, new vendor forms, IOLTA, reimbursement status updates	ALL	Accounts Payable	accountspayable@sbsblaw.com	
+Third-Party Invoices (firm pays on behalf of client up front)	ALL	Third-Party Invoices Dept (TPI)	thirdpartyinvoice@sbsb-eastham.com	
+Firm credit card & CC receipts	ALL	Accounts Payable	cc@sbsb-eastham.com	
+Firm Marketing, Sponsorships, and Attorney-Client Relations	ALL	Business Development	businessdevelopment@sbsb-eastham.com	
+Client Marketing, out-of-town CLE, Professional Memberships	ALL	Finance Committee	financecommittee@sbsb-eastham.com	
+Hardware & Software needs (tech purchasing/requests)	ALL	IT	non-urgent: helpdesk@sbsblaw.com	Urgent: Call x321
+Tech Issues	ALL	IT	non-urgent: helpdesk@sbsblaw.com	Urgent: Call x321
+Office Supplies	ALL	Office Services	Varies by office. Contact your local Office Services staff.	
+Employee Training & Development	ALL	Employee Development	EmployeeDevelopment@sbsb-eastham.com	
