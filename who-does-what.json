@@ -1,34 +1,187 @@
 {
   "updated": "2026-01-14",
+  "people": {
+    "sara_schouest": { "name": "Sara Schouest", "ext": "", "phone": "", "email": "" },
+    "melisa_funez": { "name": "Melisa Funez", "ext": "", "phone": "", "email": "" },
+    "jordyne_priesmeyer": { "name": "Jordyne Priesmeyer", "ext": "", "phone": "", "email": "" },
+    "shane_sarmiento": { "name": "Shane Sarmiento", "ext": "", "phone": "", "email": "" },
+    "shannon_block": { "name": "Shannon Block", "ext": "", "phone": "", "email": "" },
+
+    "billing": { "name": "Billing", "ext": "", "phone": "", "email": "billing@sbsblaw.com" },
+    "accounts_payable": { "name": "Accounts Payable", "ext": "", "phone": "", "email": "accountspayable@sbsblaw.com" },
+    "third_party_invoices": { "name": "Third-Party Invoices (TPI)", "ext": "", "phone": "", "email": "thirdpartyinvoice@sbsb-eastham.com" },
+    "credit_cards": { "name": "Firm Credit Card", "ext": "", "phone": "", "email": "cc@sbsb-eastham.com" },
+
+    "business_development": { "name": "Business Development", "ext": "", "phone": "", "email": "businessdevelopment@sbsb-eastham.com" },
+    "finance_committee": { "name": "Finance Committee", "ext": "", "phone": "", "email": "financecommittee@sbsb-eastham.com" },
+
+    "helpdesk": { "name": "Helpdesk", "ext": "321", "phone": "", "email": "helpdesk@sbsblaw.com" },
+    "employee_development": { "name": "Employee Development", "ext": "", "phone": "", "email": "EmployeeDevelopment@sbsb-eastham.com" },
+
+    "office_services_local": { "name": "Local Office Services Staff", "ext": "", "phone": "", "email": "" },
+    "tbd": { "name": "TBD", "ext": "", "phone": "", "email": "" }
+  },
   "items": [
-    { "topic": "Keycard", "office": "HOU", "dept": "Administration", "contact": "Sara Schouest", "notes": "" },
-    { "topic": "Keycard", "office": "DALLAS", "dept": "", "contact": "", "notes": "Needs owner/contact" },
-    { "topic": "Keycard", "office": "CORPUS CHRISTI", "dept": "", "contact": "", "notes": "Needs owner/contact" },
+    {
+      "topic": "Keycard",
+      "office": "HOU",
+      "dept": "Administration",
+      "personRefs": ["sara_schouest"],
+      "notes": ""
+    },
+    {
+      "topic": "Keycard",
+      "office": "DALLAS",
+      "dept": "",
+      "personRefs": ["tbd"],
+      "notes": "Needs owner/contact"
+    },
+    {
+      "topic": "Keycard",
+      "office": "CORPUS CHRISTI",
+      "dept": "",
+      "personRefs": ["tbd"],
+      "notes": "Needs owner/contact"
+    },
 
-    { "topic": "Building Maintenance Request", "office": "HOU", "dept": "Administration", "contact": "Sara Schouest", "notes": "" },
-    { "topic": "Building Maintenance Request", "office": "Other office", "dept": "????", "contact": "????", "notes": "" },
+    {
+      "topic": "Building Maintenance Request",
+      "office": "HOU",
+      "dept": "Administration",
+      "personRefs": ["sara_schouest"],
+      "notes": ""
+    },
+    {
+      "topic": "Building Maintenance Request",
+      "office": "Other office",
+      "dept": "????",
+      "personRefs": ["tbd"],
+      "notes": ""
+    },
 
-    { "topic": "HR Policies", "office": "ALL", "dept": "Human Resources", "contact": "Melisa Funez, Jordyne Priesmeyer", "notes": "" },
-    { "topic": "Benefits & 401k", "office": "ALL", "dept": "Human Resources", "contact": "Melisa Funez, Jordyne Priesmeyer", "notes": "" },
-    { "topic": "PTO Requests & Bar Licenses", "office": "ALL", "dept": "Human Resources", "contact": "Melisa Funez, Jordyne Priesmeyer, Sara Schouest, Shane Sarmiento", "notes": "" },
-    { "topic": "Timesheet Corrections", "office": "ALL", "dept": "Human Resources", "contact": "Melisa Funez, Jordyne Priesmeyer", "notes": "" },
+    {
+      "topic": "HR Policies",
+      "office": "ALL",
+      "dept": "Human Resources",
+      "personRefs": ["melisa_funez", "jordyne_priesmeyer"],
+      "notes": ""
+    },
+    {
+      "topic": "Benefits & 401k",
+      "office": "ALL",
+      "dept": "Human Resources",
+      "personRefs": ["melisa_funez", "jordyne_priesmeyer"],
+      "notes": ""
+    },
+    {
+      "topic": "PTO Requests & Bar Licenses",
+      "office": "ALL",
+      "dept": "Human Resources",
+      "personRefs": ["melisa_funez", "jordyne_priesmeyer", "sara_schouest", "shane_sarmiento"],
+      "notes": ""
+    },
+    {
+      "topic": "Timesheet Corrections",
+      "office": "ALL",
+      "dept": "Human Resources",
+      "personRefs": ["melisa_funez", "jordyne_priesmeyer"],
+      "notes": ""
+    },
 
-    { "topic": "WestLaw & Law 360 accounts", "office": "ALL", "dept": "Administration", "contact": "Shannon Block", "notes": "Subscriptions" },
-    { "topic": "FedEx accounts", "office": "ALL", "dept": "Administration", "contact": "Shannon Block", "notes": "" },
-    { "topic": "Harassment Training & State Required Training", "office": "ALL", "dept": "Administration", "contact": "Shannon Block", "notes": "" },
+    {
+      "topic": "WestLaw & Law 360 accounts",
+      "office": "ALL",
+      "dept": "Administration",
+      "personRefs": ["shannon_block"],
+      "notes": "Subscriptions"
+    },
+    {
+      "topic": "FedEx accounts",
+      "office": "ALL",
+      "dept": "Administration",
+      "personRefs": ["shannon_block"],
+      "notes": ""
+    },
+    {
+      "topic": "Harassment Training & State Required Training",
+      "office": "ALL",
+      "dept": "Administration",
+      "personRefs": ["shannon_block"],
+      "notes": ""
+    },
 
-    { "topic": "General Billing Questions", "office": "ALL", "dept": "Billing Dept", "contact": "billing@sbsblaw.com", "notes": "" },
-    { "topic": "Vendor/payment status, bar dues, new client forms, new vendor forms, IOLTA, reimbursement status updates", "office": "ALL", "dept": "Accounts Payable", "contact": "accountspayable@sbsblaw.com", "notes": "" },
-    { "topic": "Third-Party Invoices (firm pays on behalf of client up front)", "office": "ALL", "dept": "Third-Party Invoices Dept (TPI)", "contact": "thirdpartyinvoice@sbsb-eastham.com", "notes": "" },
-    { "topic": "Firm credit card & CC receipts", "office": "ALL", "dept": "Accounts Payable", "contact": "cc@sbsb-eastham.com", "notes": "" },
+    {
+      "topic": "General Billing Questions",
+      "office": "ALL",
+      "dept": "Billing Dept",
+      "personRefs": ["billing"],
+      "notes": ""
+    },
+    {
+      "topic": "Vendor/payment status, bar dues, new client forms, new vendor forms, IOLTA, reimbursement status updates",
+      "office": "ALL",
+      "dept": "Accounts Payable",
+      "personRefs": ["accounts_payable"],
+      "notes": ""
+    },
+    {
+      "topic": "Third-Party Invoices (firm pays on behalf of client up front)",
+      "office": "ALL",
+      "dept": "Third-Party Invoices Dept (TPI)",
+      "personRefs": ["third_party_invoices"],
+      "notes": ""
+    },
+    {
+      "topic": "Firm credit card & CC receipts",
+      "office": "ALL",
+      "dept": "Accounts Payable",
+      "personRefs": ["credit_cards"],
+      "notes": ""
+    },
 
-    { "topic": "Firm Marketing, Sponsorships, and Attorney-Client Relations", "office": "ALL", "dept": "Business Development", "contact": "businessdevelopment@sbsb-eastham.com", "notes": "" },
-    { "topic": "Client Marketing, out-of-town CLE, Professional Memberships", "office": "ALL", "dept": "Finance Committee", "contact": "financecommittee@sbsb-eastham.com", "notes": "" },
+    {
+      "topic": "Firm Marketing, Sponsorships, and Attorney-Client Relations",
+      "office": "ALL",
+      "dept": "Business Development",
+      "personRefs": ["business_development"],
+      "notes": ""
+    },
+    {
+      "topic": "Client Marketing, out-of-town CLE, Professional Memberships",
+      "office": "ALL",
+      "dept": "Finance Committee",
+      "personRefs": ["finance_committee"],
+      "notes": ""
+    },
 
-    { "topic": "Hardware & Software needs (tech purchasing/requests)", "office": "ALL", "dept": "IT", "contact": "non-urgent: helpdesk@sbsblaw.com", "notes": "Urgent: Call x321" },
-    { "topic": "Tech Issues", "office": "ALL", "dept": "IT", "contact": "non-urgent: helpdesk@sbsblaw.com", "notes": "Urgent: Call x321. Sometimes IT may involve Employee Development." },
+    {
+      "topic": "Hardware & Software needs (tech purchasing/requests)",
+      "office": "ALL",
+      "dept": "IT",
+      "personRefs": ["helpdesk"],
+      "notes": "Urgent: Call x321"
+    },
+    {
+      "topic": "Tech Issues",
+      "office": "ALL",
+      "dept": "IT",
+      "personRefs": ["helpdesk"],
+      "notes": "Urgent: Call x321. Sometimes IT may involve Employee Development."
+    },
 
-    { "topic": "Office Supplies", "office": "ALL", "dept": "Office Services", "contact": "Varies by office. Contact your local Office Services staff.", "notes": "" },
-    { "topic": "Employee Training & Development", "office": "ALL", "dept": "Employee Development", "contact": "EmployeeDevelopment@sbsb-eastham.com", "notes": "" }
+    {
+      "topic": "Office Supplies",
+      "office": "ALL",
+      "dept": "Office Services",
+      "personRefs": ["office_services_local"],
+      "notes": "Varies by office. Contact your local Office Services staff."
+    },
+    {
+      "topic": "Employee Training & Development",
+      "office": "ALL",
+      "dept": "Employee Development",
+      "personRefs": ["employee_development"],
+      "notes": ""
+    }
   ]
 }

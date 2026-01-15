@@ -5,141 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SBSB | Who Does What</title>
 
-  <!-- Favicon -->
+  <!-- Favicon (optional) -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-
-  <!-- Web Fonts  -->
-  <link id="googleFonts"
-        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap"
-        rel="stylesheet" type="text/css">
 
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="vendor/animate/animate.compat.css">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/theme-elements.css">
-  <link rel="stylesheet" href="css/theme-blog.css">
-  <link rel="stylesheet" href="css/theme-shop.css">
-
-  <!-- Skin CSS -->
   <link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
-
-  <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="css/custom.css">
 
   <style>
-    .header-logo img { width: 90px; height: auto; transition: width 0.3s, height 0.3s; }
-    #header.header-effect-shrink .header-logo img { width: 90px; height: auto; }
+    .wdw-search .form-control { border-radius: 999px; padding-left: 2.75rem; }
+    .wdw-search .fa-search { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); opacity: .6; }
+    .badge-office { font-weight: 600; letter-spacing: .2px; }
+    .muted-note { color: rgba(0,0,0,.65); }
+    .table thead th { white-space: nowrap; }
 
-    .wdw-search .form-control {
-      border-radius: 999px;
-      padding-left: 2.75rem;
+    .wdw-contact {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      cursor: pointer;
     }
-    .wdw-search .fa-search {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      opacity: 0.6;
-    }
-    .badge-office {
-      font-weight: 600;
-      letter-spacing: .2px;
-    }
-    .table thead th {
-      white-space: nowrap;
-    }
-    .muted-note {
-      color: rgba(0,0,0,.6);
-    }
+    .wdw-contact:hover { opacity: .9; }
+
+    /* Make popovers a bit wider for phone/email */
+    .popover { max-width: 340px; }
   </style>
 </head>
 
 <body data-plugin-page-transition>
 <div class="body">
 
-  <!-- ===== Header (copied pattern from your existing pages) ===== -->
-  <header id="header" class="header-effect-shrink"
-          data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-    <div class="header-body">
-      <div class="header-container container">
-        <div class="header-row">
-          <div class="header-column">
-            <div class="header-row">
-              <div class="header-logo">
-                <a href="index.html">
-                  <img alt="SBSB" style="width: 90px; height: auto;" data-sticky-width="90" data-sticky-height="90" src="SBSB-logo.png">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="header-column justify-content-end">
-            <div class="header-row">
-              <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
-                <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                  <nav class="collapse">
-                    <ul class="nav nav-pills" id="mainNav">
-                      <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="index.html">Home</a>
-                      </li>
-
-                      <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="#">Support</a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="https://helpdesk.sbsb-eastham.com/" target="_blank">IT Ticket</a>
-                          </li>
-                          <li><a class="dropdown-item" href="osr.html">Office Service Request</a></li>
-                          <li><a class="dropdown-item" href="conf.html">Conf. Room Request</a></li>
-                        </ul>
-                      </li>
-
-                      <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="#">Directory</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="extension.html">Extension List</a></li>
-                          <li><a class="dropdown-item" href="visual.html">Visual Directory</a></li>
-                          <li><a class="dropdown-item" href="orgchart.html">Org Chart</a></li>
-                        </ul>
-                      </li>
-
-                      <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="event calendar.html">Events</a>
-                      </li>
-
-                      <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle active" href="who-does-what.html">Who Does What</a>
-                      </li>
-
-                      <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="#">Galleries</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="gallery.html">Christmas Party 2024</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-                  <i class="fas fa-bars"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </header>
+  <!-- ===== Optional: Paste your existing header/nav here ===== -->
+  <!-- Keeping it minimal to avoid conflicting scripts.
+       If you paste your site's full header, leave the scripts at the bottom intact. -->
   <!-- ===== /Header ===== -->
 
   <div role="main" class="main">
@@ -148,7 +52,7 @@
         <div class="row align-items-center">
           <div class="col">
             <h1 class="text-8 font-weight-bold mb-0">Who Does What</h1>
-            <p class="mb-0 muted-note">Search an issue/topic to find the right team & contact.</p>
+            <p class="mb-0 muted-note">Search an issue/topic to find the right department and contact.</p>
           </div>
         </div>
       </div>
@@ -164,170 +68,35 @@
               <div class="position-relative wdw-search">
                 <i class="fas fa-search"></i>
                 <input id="wdwSearch" type="text" class="form-control form-control-lg"
-                       placeholder="Search (ex: keycard, PTO, WestLaw, phone issues, FedEx, onboarding...)">
+                       placeholder="Search (ex: keycard, PTO, WestLaw, FedEx, billing, tech...)">
               </div>
               <div class="small muted-note mt-2">
                 Tip: search by <strong>topic</strong>, <strong>department</strong>, <strong>contact name</strong>, or <strong>office</strong>.
+                Hover/click a name to see extension/phone/email.
               </div>
             </div>
 
             <div class="col-lg-5">
-              <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="ALL">ALL</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="HOU">HOU</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="DALLAS">DALLAS</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="CORPUS CHRISTI">CORPUS CHRISTI</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="NEW ORLEANS">NEW ORLEANS</button>
-              </div>
-              <div class="small muted-note mt-2 text-lg-end">
-                Office filter is optional — search still works without it.
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-4" />
-
-          <div class="table-responsive">
-            <table class="table table-hover align-middle mb-0">
-              <thead class="bg-light">
-                <tr>
-                  <th style="min-width: 260px;">Issue / Topic</th>
-                  <th style="min-width: 120px;">Office</th>
-                  <th style="min-width: 220px;">Responsible Department</th>
-                  <th style="min-width: 240px;">Contact</th>
-                  <th style="min-width: 260px;">Notes</th>
-                </tr>
-              </thead>
-              <tbody id="wdwTbody">
-                <!-- rows inserted by JS -->
-              </tbody>
-            </table>
-          </div>
-
-          <div id="wdwEmpty" class="alert alert-light border mt-4 d-none">
-            <strong>No matches.</strong> Try a different keyword (ex: “PTO”, “keycard”, “phone”, “WestLaw”, “billing”, “supplies”).
-          </div>
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h3 class="text-5 mb-2">Need to add something?</h3>
-          <p class="mb-0">
-            Add or edit items inside the <code>WDW_DATA</code> array at the bottom of this page.
-            If you want, I can also convert your Word doc into the same structure so it’s “single source of truth.”
-          </p>
-        </div>
-      </div>
-
+  <div class="d-flex justify-content-lg-end">
+    <div style="min-width: 220px;">
+      <label for="officeSelect" class="form-label mb-1 fw-semibold">
+        Office
+      </label>
+      <select id="officeSelect" class="form-select">
+        <option value="ALL">All Offices</option>
+        <option value="HOU">Houston</option>
+        <option value="DALLAS">Dallas</option>
+        <option value="CORPUS CHRISTI">Corpus Christi</option>
+        <option value="NEW ORLEANS">New Orleans</option>
+      </select>
     </div>
   </div>
 
-  <!-- ===== Footer (your existing style) ===== -->
-  <footer id="footer" class="mt-0">
-    <div class="footer-copyright">
-      <div class="container py-2">
-        <div class="row py-4">
-          <div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-            <a href="index.html" class="logo pe-0 pe-lg-3">
-              <img alt="SBSB Website" src="SBSB-logo.png" class="opacity-7" height="50">
-            </a>
-          </div>
-          <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-            <p>SBSB-EASTHAM 2025</p>
-          </div>
-          <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end"></div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- ===== /Footer ===== -->
-
+  <div class="small muted-note mt-2 text-lg-end">
+    Data loaded from <code>who-does-what.json</code>
+  </div>
 </div>
 
-<!-- Vendor -->
-<script src="vendor/plugins/js/plugins.min.js"></script>
-
-<!-- Theme Base, Components and Settings -->
-<script src="js/theme.js"></script>
-
-<!-- Theme Custom -->
-<script src="js/custom.js"></script>
-
-<!-- Theme Initialization Files -->
-<script src="js/theme.init.js"></script>
-
-<!-- Scroll top -->
-<a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SBSB | Who Does What</title>
-
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-
-  <link id="googleFonts"
-        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap"
-        rel="stylesheet" type="text/css">
-
-  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/theme-elements.css">
-  <link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <style>
-    .wdw-search .form-control { border-radius: 999px; padding-left: 2.75rem; }
-    .wdw-search .fa-search { position:absolute; left:1rem; top:50%; transform:translateY(-50%); opacity:.6; }
-    .badge-office { font-weight: 600; letter-spacing: .2px; }
-    .muted-note { color: rgba(0,0,0,.6); }
-    .table thead th { white-space: nowrap; }
-  </style>
-</head>
-
-<body data-plugin-page-transition>
-<div class="body">
-
-  <!-- NOTE: Keep your existing header/nav here if you want.
-       I’m leaving it out to keep the snippet focused. -->
-
-  <div role="main" class="main">
-    <div class="container py-4">
-
-      <div class="card mb-4">
-        <div class="card-body">
-
-          <div class="row align-items-center g-3">
-            <div class="col-lg-7">
-              <div class="position-relative wdw-search">
-                <i class="fas fa-search"></i>
-                <input id="wdwSearch" type="text" class="form-control form-control-lg"
-                       placeholder="Search (ex: keycard, PTO, WestLaw, FedEx, onboarding...)">
-              </div>
-              <div class="small muted-note mt-2">
-                Search by <strong>topic</strong>, <strong>department</strong>, <strong>contact</strong>, or <strong>office</strong>.
-              </div>
-            </div>
-
-            <div class="col-lg-5">
-              <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="ALL">ALL</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="HOU">HOU</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="DALLAS">DALLAS</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="CORPUS CHRISTI">CORPUS CHRISTI</button>
-                <button class="btn btn-outline-primary btn-sm wdw-office" data-office="NEW ORLEANS">NEW ORLEANS</button>
-              </div>
-              <div class="small muted-note mt-2 text-lg-end">
-                Data loads from <code>who-does-what.json</code>
-              </div>
-            </div>
-          </div>
 
           <hr class="my-4" />
 
@@ -338,21 +107,23 @@
               Last updated: <span id="wdwUpdated" class="fw-semibold">—</span>
             </div>
 
-            <button id="wdwReload" class="btn btn-light btn-sm border">
-              <i class="fas fa-sync-alt me-1"></i> Reload
-            </button>
+            <div class="d-flex gap-2">
+              <button id="wdwReload" class="btn btn-light btn-sm border">
+                <i class="fas fa-sync-alt me-1"></i> Reload
+              </button>
+            </div>
           </div>
 
           <div class="table-responsive mt-3">
             <table class="table table-hover align-middle mb-0">
               <thead class="bg-light">
-              <tr>
-                <th style="min-width: 260px;">Issue / Topic</th>
-                <th style="min-width: 120px;">Office</th>
-                <th style="min-width: 220px;">Responsible Department</th>
-                <th style="min-width: 240px;">Contact</th>
-                <th style="min-width: 260px;">Notes</th>
-              </tr>
+                <tr>
+                  <th style="min-width: 260px;">Issue / Topic</th>
+                  <th style="min-width: 120px;">Office</th>
+                  <th style="min-width: 220px;">Responsible Department</th>
+                  <th style="min-width: 260px;">Contact</th>
+                  <th style="min-width: 280px;">Notes</th>
+                </tr>
               </thead>
               <tbody id="wdwTbody"></tbody>
             </table>
@@ -363,7 +134,6 @@
           </div>
 
           <div id="wdwError" class="alert alert-danger mt-4 d-none"></div>
-
         </div>
       </div>
 
@@ -371,42 +141,121 @@
   </div>
 </div>
 
-<script>
-let selectedOffice = "ALL";
-let WDW_DATA = [];
-let WDW_UPDATED = "—";
+<!-- Vendor / Theme JS -->
+<script src="vendor/plugins/js/plugins.min.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/theme.init.js"></script>
 
+<script>
+/**
+ * Expects who-does-what.json in this structure:
+ * {
+ *   "updated": "YYYY-MM-DD",
+ *   "people": { "id": { "name": "...", "ext": "...", "phone": "...", "email": "..." }, ... },
+ *   "items": [ { "topic": "...", "office": "...", "dept": "...", "personRefs": ["id","id"], "notes": "..." }, ... ]
+ * }
+ */
+
+let selectedOffice = "ALL";
+let WDW_UPDATED = "—";
+let PEOPLE = {};
+let ITEMS = [];
+
+// ---------- helpers ----------
 function normalize(str) {
   return (str || "").toString().toLowerCase().trim();
 }
 
+function escapeHtml(s) {
+  return (s || "").toString()
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function safe(val) {
-  return (val && val.toString().trim()) ? val : "<span class='muted-note'>—</span>";
+  return (val && val.toString().trim()) ? escapeHtml(val) : "<span class='muted-note'>—</span>";
 }
 
 function officeBadge(office) {
   const o = (office || "").trim().toUpperCase();
   const isAll = o === "ALL";
   const cls = isAll ? "bg-success" : "bg-primary";
-  return `<span class="badge ${cls} badge-office">${o || "-"}</span>`;
+  return `<span class="badge ${cls} badge-office">${escapeHtml(o || "-")}</span>`;
 }
 
-function formatContact(contact) {
-  const c = (contact || "").toString().trim();
-  if (!c) return "<span class='muted-note'>—</span>";
+function buildPopoverContent(person) {
+  const ext = person.ext ? `<div><strong>Ext:</strong> ${escapeHtml(person.ext)}</div>` : "";
+  const phone = person.phone ? `<div><strong>Phone:</strong> ${escapeHtml(person.phone)}</div>` : "";
+  const email = person.email
+    ? `<div><strong>Email:</strong> <a href="mailto:${escapeHtml(person.email)}">${escapeHtml(person.email)}</a></div>`
+    : "";
 
-  // Link any email-looking strings inside the field
-  return c.replace(/[^\s@]+@[^\s@]+\.[^\s@]+/g, (email) => `<a href="mailto:${email}">${email}</a>`);
+  const body = [ext, phone, email].filter(Boolean).join("");
+  return body || `<div class="muted-note">No extension/phone on file.</div>`;
 }
 
+function renderContacts(personRefs) {
+  if (!Array.isArray(personRefs) || personRefs.length === 0) {
+    return "<span class='muted-note'>—</span>";
+  }
+
+  return personRefs.map((id, idx) => {
+    const p = PEOPLE[id];
+    if (!p) {
+      const unknown = escapeHtml(id);
+      return `<span class="muted-note">${unknown}</span>${idx < personRefs.length - 1 ? "<span>, </span>" : ""}`;
+    }
+
+    const name = escapeHtml(p.name || "Contact");
+    const content = escapeHtml(buildPopoverContent(p)); // escape to safely store in attribute
+
+    return `
+      <a href="javascript:void(0)"
+         class="wdw-contact"
+         data-bs-toggle="popover"
+         data-bs-trigger="hover focus"
+         data-bs-placement="auto"
+         data-bs-html="true"
+         data-bs-title="${name}"
+         data-bs-content="${content}">
+        ${name}
+      </a>${idx < personRefs.length - 1 ? "<span>, </span>" : ""}`;
+  }).join("");
+}
+
+function initPopovers() {
+  // Requires bootstrap Popover available (Bootstrap 5)
+  if (typeof bootstrap === "undefined" || !bootstrap.Popover) return;
+
+  // Dispose old popovers to prevent duplicates after re-render
+  document.querySelectorAll(".wdw-contact").forEach(el => {
+    const existing = bootstrap.Popover.getInstance(el);
+    if (existing) existing.dispose();
+  });
+
+  document.querySelectorAll(".wdw-contact").forEach(el => {
+    new bootstrap.Popover(el, {
+      container: "body",
+      trigger: "hover focus",
+      placement: "auto",
+      html: true
+    });
+  });
+}
+
+// ---------- rendering ----------
 function renderRows() {
   const q = normalize(document.getElementById("wdwSearch").value);
   const tbody = document.getElementById("wdwTbody");
   const empty = document.getElementById("wdwEmpty");
 
-  let rows = WDW_DATA.slice();
+  let rows = ITEMS.slice();
 
-  // Office filter (treat "ALL" entries as always eligible)
+  // Office filter (ALL entries always eligible)
   if (selectedOffice !== "ALL") {
     rows = rows.filter(r => {
       const ro = (r.office || "").toUpperCase().trim();
@@ -414,12 +263,20 @@ function renderRows() {
     });
   }
 
-  // Search filter (across all columns)
+  // Search filter across topic/office/dept/notes + resolved people fields
   if (q) {
     rows = rows.filter(r => {
-      const hay = [r.topic, r.office, r.dept, r.contact, r.notes]
-        .map(normalize)
+      const peopleText = (Array.isArray(r.personRefs) ? r.personRefs : [])
+        .map(id => {
+          const p = PEOPLE[id] || {};
+          return [p.name, p.email, p.ext, p.phone].filter(Boolean).join(" ");
+        })
         .join(" | ");
+
+      const hay = [
+        r.topic, r.office, r.dept, r.notes, peopleText
+      ].map(normalize).join(" | ");
+
       return hay.includes(q);
     });
   }
@@ -429,7 +286,7 @@ function renderRows() {
       <td><strong>${safe(r.topic)}</strong></td>
       <td>${officeBadge(r.office)}</td>
       <td>${safe(r.dept)}</td>
-      <td>${formatContact(r.contact)}</td>
+      <td>${renderContacts(r.personRefs)}</td>
       <td>${safe(r.notes)}</td>
     </tr>
   `).join("");
@@ -438,39 +295,45 @@ function renderRows() {
   document.getElementById("wdwUpdated").textContent = WDW_UPDATED;
 
   empty.classList.toggle("d-none", rows.length !== 0);
+
+  initPopovers();
 }
 
+// ---------- data load ----------
 async function loadData() {
   const errBox = document.getElementById("wdwError");
   errBox.classList.add("d-none");
   errBox.textContent = "";
 
-  const url = "who-does-what.json?v=" + Date.now(); // cache-bust for quick edits
+  const url = "who-does-what.json?v=" + Date.now(); // cache-bust for fast edits
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error("Failed to load who-does-what.json (" + res.status + ")");
 
   const json = await res.json();
-  if (!json || !Array.isArray(json.items)) throw new Error("Invalid JSON: expected { items: [...] }");
+  if (!json || typeof json !== "object") throw new Error("Invalid JSON (not an object)");
+  if (!json.people || typeof json.people !== "object") throw new Error("Invalid JSON: missing 'people' object");
+  if (!Array.isArray(json.items)) throw new Error("Invalid JSON: missing 'items' array");
 
-  WDW_DATA = json.items;
+  PEOPLE = json.people;
+  ITEMS = json.items;
   WDW_UPDATED = json.updated || "—";
+
   renderRows();
 }
 
+// ---------- init ----------
 document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("wdwSearch").addEventListener("input", renderRows);
 
-  document.querySelectorAll(".wdw-office").forEach(btn => {
-    btn.addEventListener("click", () => {
-      selectedOffice = btn.getAttribute("data-office").toUpperCase().trim();
-      document.querySelectorAll(".wdw-office").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      renderRows();
-    });
-  });
+const officeSelect = document.getElementById("officeSelect");
 
-  const allBtn = document.querySelector('.wdw-office[data-office="ALL"]');
-  if (allBtn) allBtn.classList.add("active");
+officeSelect.addEventListener("change", () => {
+  selectedOffice = officeSelect.value.toUpperCase().trim();
+  renderRows();
+});
+
+// default selection
+officeSelect.value = "ALL";
 
   document.getElementById("wdwReload").addEventListener("click", loadData);
 
@@ -482,10 +345,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     errBox.classList.remove("d-none");
     errBox.innerHTML =
       "<strong>Could not load who-does-what.json</strong><br>" +
-      "<span class='small'>" + (e.message || "Unknown error") + "</span>";
+      "<span class='small'>" + escapeHtml(e.message || "Unknown error") + "</span>";
   }
 
-  // Optional: auto-refresh every 2 minutes
+  // Optional: auto refresh every 2 minutes
   // setInterval(loadData, 120000);
 });
 </script>
