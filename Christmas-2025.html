@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<title>SBSB | Intranet</title>
+	<meta name="keywords" content="WebSite Template" />
+	<meta name="description" content="Porto - Multipurpose Website Template">
+	<meta name="author" content="okler.net">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+	<!-- Web Fonts  -->
+	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+	<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/theme-elements.css">
+	<link rel="stylesheet" href="css/theme-blog.css">
+	<link rel="stylesheet" href="css/theme-shop.css">
+
+	<!-- Current Page CSS -->
+	<link rel="stylesheet" href="vendor/circle-flip-slideshow/css/component.css">
+
+	<!-- Skin CSS -->
+	<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
+
+	<!-- Theme Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<style>
+		.header-logo img {
+			width: 90px;
+			height: auto;
+			transition: width 0.3s, height 0.3s;
+		}
+
+		#header.header-effect-shrink .header-logo img {
+			width: 90px; /* Adjust the sticky width */
+			height: auto; /* Maintain aspect ratio */
+		}
+
+		h2 {
+			margin-top: 20px;
+		}
+
+		.gallery {
+			display: grid;
+			/* Exactly 5 columns across */
+			grid-template-columns: repeat(5, 1fr);
+			gap: 10px;
+			padding: 20px;
+		}
+
+		.gallery img {
+			width: 100%;     /* Let the grid cell define the width */
+			height: auto;    /* Maintain aspect ratio */
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+			transition: transform 0.3s ease-in-out;
+			cursor: default; /* Nice cursor effect to show it's clickable */
+		}
+	</style>
+</head>
+
+<body data-plugin-page-transition>
+	<div class="body">
+		<header id="header" class="header-effect-shrink"
+  data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+  <div class="header-body">
+    <div class="header-container container">
+      <div class="header-row">
+        <div class="header-column">
+          <div class="header-row">
+            <div class="header-logo">
+              <a href="index.html">
+                <img alt="SBSB" style="width: 90px; height: auto;"
+                     data-sticky-width="90" data-sticky-height="90"
+                     src="SBSB-logo.png">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-column justify-content-end">
+          <div class="header-row">
+            <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
+              <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                <nav class="collapse">
+                  <ul class="nav nav-pills" id="mainNav">
+                    <li class="dropdown">
+                      <a class="dropdown-item dropdown-toggle active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#">Support</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="https://helpdesk.sbsb-eastham.com/" target="_blank">IT Ticket</a>
+                        </li>
+                        <li><a class="dropdown-item" href="osr.html">Office Service Request</a></li>
+                        <li><a class="dropdown-item" href="conf.html">Conf. Room Request</a></li>
+                        <li><a class="dropdown-item" href="hrinfo.html">PTO & Benefits Info</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#">Directory</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="extension.html">Extension List</a></li>
+                        <li><a class="dropdown-item" href="orgchart.html">Org Chart</a></li>
+                        <li><a class="dropdown-item" href="Help.html">Who to Call</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="event calendar.html">Events</a>
+                    </li>
+
+                    <li class="dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#">Galleries</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gallery.html">Christmas Party 2024</a></li>
+                        <li><a class="dropdown-item" href="Christmas-2025.html">Christmas Party 2025</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+                <i class="fas fa-bars"></i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+			<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
+
+
+
+		<!-- Buttons / Jump Links -->
+		<div class="gallery-nav">
+			<a class="btn btn-light btn-sm border" href="#christmas">
+				<i class="far fa-images me-1 text-primary"></i> Christmas Party 2024
+			</a>
+			<a class="btn btn-light btn-sm border" href="#boca">
+				<i class="fas fa-map-marker-alt me-1 text-primary"></i> Boca
+			</a>
+			<a class="btn btn-light btn-sm border" href="#dallas">
+				<i class="fas fa-map-marker-alt me-1 text-primary"></i> Dallas
+			</a>
+		</div>
+
+		<!-- =========================
+			 Christmas Party 2024
+		========================= -->
+		<div id="christmas"></div>
+		<h2 style="text-align: center;">Christmas Party 2025</h2>
+<div class="small muted-note mt-1 fst-italic text-center" style="font-size: 0.95rem;">
+  We’re still collecting photos. Check back as more are added.
+</div>
+		<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
+
+		 <div class="gallery">
+
+			<a href="https://drive.google.com/thumbnail?id=1L9bri48WFFaRzPwIG5opLqokIJQ7Ekm_&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1L9bri48WFFaRzPwIG5opLqokIJQ7Ekm_" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=124-s67a_jLX_nMdRDD677zvpJQ1lwwyq&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=124-s67a_jLX_nMdRDD677zvpJQ1lwwyq" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1oUy-12klQywvaT8mYqS6avxGcQuumpc-&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1oUy-12klQywvaT8mYqS6avxGcQuumpc-" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1liQJUcfx-SY7glVCM4dMOaT6vxcd8S-R&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1liQJUcfx-SY7glVCM4dMOaT6vxcd8S-R" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=16KWcXJprIVEVZ5TRjCEC_YqUZyYv9aSs&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=16KWcXJprIVEVZ5TRjCEC_YqUZyYv9aSs" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1sSupHKPIW8OrlvHeUr_US40k7aiA3hnu&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1sSupHKPIW8OrlvHeUr_US40k7aiA3hnu" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ndRzL_Kc2GddD3qqi9TO7PVuliTM2Rjk&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ndRzL_Kc2GddD3qqi9TO7PVuliTM2Rjk" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1HKnksSuKKolmC1kwqmK28opWJjWAY97Z&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1HKnksSuKKolmC1kwqmK28opWJjWAY97Z" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1-Ip0udSQ8mUYEVrYrm70WKfLJBb6GbON&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1-Ip0udSQ8mUYEVrYrm70WKfLJBb6GbON" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1xavmv7KlcwrMP5ywnsUUUeXNGwQqCzqV&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1xavmv7KlcwrMP5ywnsUUUeXNGwQqCzqV" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1Ppcu_R5YVIwaeERb-h6e7pwASmhu7V5-&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1Ppcu_R5YVIwaeERb-h6e7pwASmhu7V5-" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1sOW2EHrcQ-K4eaLMYyLkM_VZcaYiM6Px&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1sOW2EHrcQ-K4eaLMYyLkM_VZcaYiM6Px" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1oGHGfAtKf3HbRu23xMUhFFRbY4-5_hMc&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1oGHGfAtKf3HbRu23xMUhFFRbY4-5_hMc" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1h6QevweKRR9yKIC6iVFW-hFlUYMko4K8&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1h6QevweKRR9yKIC6iVFW-hFlUYMko4K8" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1izTK8lrhGomUWKFNbyPy-jH5la03KWhG&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1izTK8lrhGomUWKFNbyPy-jH5la03KWhG" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1YlDuW9Kyt0bMiUKKZv7g4GYmHZLIik79&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1YlDuW9Kyt0bMiUKKZv7g4GYmHZLIik79" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1-XcGUP6-4XGqRV66D32fxaWdHxVu7rRC&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1-XcGUP6-4XGqRV66D32fxaWdHxVu7rRC" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1kyaviOeqCZIYfzRpCSo8jKKbeGup9Fqx&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1kyaviOeqCZIYfzRpCSo8jKKbeGup9Fqx" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1PFIDnJN5YGeIV-1ytoc2rYkFJlLGvQcT&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1PFIDnJN5YGeIV-1ytoc2rYkFJlLGvQcT" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ZrBxSLC1t1iocrQVU7qd6Jv-T0YxnZB0&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ZrBxSLC1t1iocrQVU7qd6Jv-T0YxnZB0" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1qt7OU9GbAOkKtIOSb8CnNJa71QljCTIx&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1qt7OU9GbAOkKtIOSb8CnNJa71QljCTIx" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1B2aK3CuwGCw3lAScsRtxJlc2XiMThChs&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1B2aK3CuwGCw3lAScsRtxJlc2XiMThChs" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1p187ROzvzC3UsOJ17WYeYoByajqkWe2c&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1p187ROzvzC3UsOJ17WYeYoByajqkWe2c" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=13TmwDVSTcxQVoNnOvrCRi8pG8Cz_mVJA&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=13TmwDVSTcxQVoNnOvrCRi8pG8Cz_mVJA" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1AR_GCMdfGSghhK83vtIPOIk2kbfU7xeG&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1AR_GCMdfGSghhK83vtIPOIk2kbfU7xeG" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1HxWwygSD1dEwtsf_KGCyGAPskDQYviRZ&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1HxWwygSD1dEwtsf_KGCyGAPskDQYviRZ" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1Cj-5vNb8xUlyq6Q8RFQTw70Ksrd2MgBp&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1Cj-5vNb8xUlyq6Q8RFQTw70Ksrd2MgBp" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1y0UQ9beaQ02YCMcZeesjGvAK7dkwE90L&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1y0UQ9beaQ02YCMcZeesjGvAK7dkwE90L" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1bn3Zhho5jfczeqNxdREiTIbkLQrBECAk&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1bn3Zhho5jfczeqNxdREiTIbkLQrBECAk" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1-SuGgl7BCbXrzbqCqX_VECZ1sZVZevEj&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1-SuGgl7BCbXrzbqCqX_VECZ1sZVZevEj" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1D9tShwkfe3Y8Tv-2oWdriDXaaZ_aagHV&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1D9tShwkfe3Y8Tv-2oWdriDXaaZ_aagHV" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1WwsQ30-ZirNKM9d6dxgNWkrn2qYHxrCO&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1WwsQ30-ZirNKM9d6dxgNWkrn2qYHxrCO" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1yra8g3Y1eqIfyz6aNZw2GaOUyFMqosMn&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1yra8g3Y1eqIfyz6aNZw2GaOUyFMqosMn" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1KYMu3ZbVOOwNGhelTUBK8-sxYk1HE6l6&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1KYMu3ZbVOOwNGhelTUBK8-sxYk1HE6l6" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1C_O7vhxDvQ2OJgcDX3UxsETuH7VXNwZw&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1C_O7vhxDvQ2OJgcDX3UxsETuH7VXNwZw" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=13jIozy81x87-8XjWXLZWJ4L7rmXQpmYh&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=13jIozy81x87-8XjWXLZWJ4L7rmXQpmYh" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1DnhAnuRl-HP3bjgWgJ_sudRhElbk-vzt&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1DnhAnuRl-HP3bjgWgJ_sudRhElbk-vzt" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1R7gSlks5KcrC_UYlCzN4JhUnbw1wY2Q3&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1R7gSlks5KcrC_UYlCzN4JhUnbw1wY2Q3" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=19Y5mY1jZ3fNR84DpxyxqZb4Hv7TJZ58v&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=19Y5mY1jZ3fNR84DpxyxqZb4Hv7TJZ58v" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1WxfdegNfgt5_Fr5ILmF1kMOkEBk-ZItv&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1WxfdegNfgt5_Fr5ILmF1kMOkEBk-ZItv" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=19wKbuIcdjhAhZIM_Yxupm452awIX8B_f&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=19wKbuIcdjhAhZIM_Yxupm452awIX8B_f" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1lGPmYgtMB9W8TFg52p_CGTjqkyEy8gQl&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1lGPmYgtMB9W8TFg52p_CGTjqkyEy8gQl" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1LFSytAaqf8K66qF745LnZyTTeQUpS8iW&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1LFSytAaqf8K66qF745LnZyTTeQUpS8iW" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1fP0HyPGT3t1QJ6v547iBsV1IErVWCvv8&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1fP0HyPGT3t1QJ6v547iBsV1IErVWCvv8" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1UWFbJCaM9usAiZuVP1J1u6M3VkD47eLB&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1UWFbJCaM9usAiZuVP1J1u6M3VkD47eLB" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1GJjVdaA_CmStIaEI8BTSTPJvvf-AQaF7&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1GJjVdaA_CmStIaEI8BTSTPJvvf-AQaF7" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1BPyTfQcPBP9cJstuuSu4RGXugANPs0o8&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1BPyTfQcPBP9cJstuuSu4RGXugANPs0o8" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1RJhQUdgsxXAKQhL5hW8SGJO1FNDgVBt-&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1RJhQUdgsxXAKQhL5hW8SGJO1FNDgVBt-" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1kq5a0cf66bTZk8cdCq_oXR0QeCt-UYMf&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1kq5a0cf66bTZk8cdCq_oXR0QeCt-UYMf" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1AEDDrcHXkTW19QohN5OuxX9CG_h4O7Bu&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1AEDDrcHXkTW19QohN5OuxX9CG_h4O7Bu" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1LYUu5wJDR7kZy515hl48Nw2hmby5AD7m&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1LYUu5wJDR7kZy515hl48Nw2hmby5AD7m" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1NWYq0m4pBouO0eq8MDECCn3hac2E1RaQ&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1NWYq0m4pBouO0eq8MDECCn3hac2E1RaQ" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1l_4ki8iV4nNfvqgl1IQUdozXU5ui7bqF&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1l_4ki8iV4nNfvqgl1IQUdozXU5ui7bqF" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1fm2t2E8KrzoKvC5ViHfo8m9dy5_oIFTw&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1fm2t2E8KrzoKvC5ViHfo8m9dy5_oIFTw" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=15zQdpOguzsrE1k_w1khKlX7uJCAPohio&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=15zQdpOguzsrE1k_w1khKlX7uJCAPohio" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1R0K6XGjAKGZEEGxPwt8m5Bez8J_BceJS&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1R0K6XGjAKGZEEGxPwt8m5Bez8J_BceJS" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1AIkGkO8u03NHg7AgDyAzuM9Lq_YerfYG&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1AIkGkO8u03NHg7AgDyAzuM9Lq_YerfYG" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1rd9VEqjiYDCdcGrIg8ziCCPOoz6nDQ-Q&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1rd9VEqjiYDCdcGrIg8ziCCPOoz6nDQ-Q" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1FVEVzWLsPthzAd70EFXkJWYHiRcBZ0TU&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1FVEVzWLsPthzAd70EFXkJWYHiRcBZ0TU" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1L8IHR0_aKm-50kvkTjxYJ76_C_CNzRdb&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1L8IHR0_aKm-50kvkTjxYJ76_C_CNzRdb" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1pN6utV7WaIP9pXuBX8_9NIDrB9rZHORS&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1pN6utV7WaIP9pXuBX8_9NIDrB9rZHORS" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1zQzZ20GmuiI94pCRt4r7ByiY_4m5DtaQ&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1zQzZ20GmuiI94pCRt4r7ByiY_4m5DtaQ" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1nKt9iy35YE7mkeJySg9giDRIK4aM5W0U&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1nKt9iy35YE7mkeJySg9giDRIK4aM5W0U" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ABxOm_P9suop1BdQYoOfE3vdh5rlqFxW&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ABxOm_P9suop1BdQYoOfE3vdh5rlqFxW" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1D3F_OyMc9tGDllreZ__mxpZVzOL75aqE&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1D3F_OyMc9tGDllreZ__mxpZVzOL75aqE" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1_JK5-0A1-vJCtEozHEB6qq9dyAUQJFFu&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1_JK5-0A1-vJCtEozHEB6qq9dyAUQJFFu" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1Ab-Gyl2KFJPxXlcYLXHVfZoNlbC8cE4u&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1Ab-Gyl2KFJPxXlcYLXHVfZoNlbC8cE4u" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1c4FmlaMQNtmRQlHk8U21m0Y7N6YVw0mz&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1c4FmlaMQNtmRQlHk8U21m0Y7N6YVw0mz" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1UNlx-NV5ZDWO7HYOlgsKKqZRigPJuYWm&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1UNlx-NV5ZDWO7HYOlgsKKqZRigPJuYWm" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1hSPyS_NkwqaTqIs-X5F9zGxhYmwn2Ixr&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1hSPyS_NkwqaTqIs-X5F9zGxhYmwn2Ixr" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1zj4rKh3uitqpjb7U540yj9-jdUPOSqOK&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1zj4rKh3uitqpjb7U540yj9-jdUPOSqOK" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1W0AMPudP-S6r5t4iqnUrpyoEzHv5xtK3&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1W0AMPudP-S6r5t4iqnUrpyoEzHv5xtK3" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1HNLNsVJdCXCmNlcIFG4rnm_3kju2Z5ja&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1HNLNsVJdCXCmNlcIFG4rnm_3kju2Z5ja" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1s2KnMZWGAHCaunahhiH_O3IqXmTzsn2t&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1s2KnMZWGAHCaunahhiH_O3IqXmTzsn2t" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=10CBT-ts6b6iNAyXxtudPvR5zzjx-KRwj&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=10CBT-ts6b6iNAyXxtudPvR5zzjx-KRwj" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1QIdDby65ol-wnXgISF-ARMDU77whA3Zy&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1QIdDby65ol-wnXgISF-ARMDU77whA3Zy" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1Ze2gyFUEk9ZWUzRHt7cINakBHe95_Obp&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1Ze2gyFUEk9ZWUzRHt7cINakBHe95_Obp" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1L0Po7jypVfXhXKILR0sdXAwDPsg6IIKu&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1L0Po7jypVfXhXKILR0sdXAwDPsg6IIKu" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1VR0myElBdOUCGjLoEO_O4_pXyIGUXamI&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1VR0myElBdOUCGjLoEO_O4_pXyIGUXamI" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1rGPOYOjtWrYxhDgV7DhVqAH3XOLuvX3h&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1rGPOYOjtWrYxhDgV7DhVqAH3XOLuvX3h" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1BLC0cF5jwLz3H8ho59I8Mxj8W918U9Mw&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1BLC0cF5jwLz3H8ho59I8Mxj8W918U9Mw" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1LgYqdChmIeT7yb2llrMO8O6Q7NySEINK&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1LgYqdChmIeT7yb2llrMO8O6Q7NySEINK" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1rLyvk1AZwmpE1aVrKh1twcvbZZIREXhB&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1rLyvk1AZwmpE1aVrKh1twcvbZZIREXhB" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=18I-MNrkbW8NXwIGFjCBMHtR9G60hWPm_&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=18I-MNrkbW8NXwIGFjCBMHtR9G60hWPm_" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1hCjkF4Rs6lQPUnLAiHHHpS1b5XS4oXhr&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1hCjkF4Rs6lQPUnLAiHHHpS1b5XS4oXhr" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ZAOeGX3Vkb5dzc8nMW41YfnnO2-N0TXN&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ZAOeGX3Vkb5dzc8nMW41YfnnO2-N0TXN" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1W_rUIJrpsJaAOTNyAqgPa1K74DCRQb-d&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1W_rUIJrpsJaAOTNyAqgPa1K74DCRQb-d" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=18BVIENr91MED6grcHtBPgDw4BAB94sla&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=18BVIENr91MED6grcHtBPgDw4BAB94sla" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1RwNZk8p98WA-kjq_6otVY984xIo5Nrnd&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1RwNZk8p98WA-kjq_6otVY984xIo5Nrnd" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1hj_5ldk6oh6q5encgTf3dLLKzJEaFgb9&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1hj_5ldk6oh6q5encgTf3dLLKzJEaFgb9" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1PDS-nGH7ecfMcDXmAvn7Y8gIYVbtIQqT&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1PDS-nGH7ecfMcDXmAvn7Y8gIYVbtIQqT" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1GSWM6BsXM_Mlv1ahk8y2Iw4no4JKHfk5&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1GSWM6BsXM_Mlv1ahk8y2Iw4no4JKHfk5" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1k7yy00f-K24emnuqxsPMSXQCOhOgIRnN&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1k7yy00f-K24emnuqxsPMSXQCOhOgIRnN" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1BSCUO4X3QIQ5-Ta1rnHDCIX7_3vzZRgN&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1BSCUO4X3QIQ5-Ta1rnHDCIX7_3vzZRgN" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=19rgUaslTUY9z3-dHtzEgksUlAkrVPJm_&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=19rgUaslTUY9z3-dHtzEgksUlAkrVPJm_" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1YKFzDjP5C88Q9f2kSJaj2JQzKmGlBnkN&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1YKFzDjP5C88Q9f2kSJaj2JQzKmGlBnkN" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ZEkFMmYPfworEj9f8QnbiMfLJ_7cmT2Q&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ZEkFMmYPfworEj9f8QnbiMfLJ_7cmT2Q" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1lrQhtGtwFsoFa9UbGFoIFJxH9hyvAx1J&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1lrQhtGtwFsoFa9UbGFoIFJxH9hyvAx1J" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1B4hkpk6hONna0GWir_7qn62qM9WCpWtb&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1B4hkpk6hONna0GWir_7qn62qM9WCpWtb" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1CxzbIZEyFRIj7usDYVo_u81KUxVlsFmG&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1CxzbIZEyFRIj7usDYVo_u81KUxVlsFmG" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1h-NYWEBowhErgmK9SW9A79Ko7uQkEQrN&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1h-NYWEBowhErgmK9SW9A79Ko7uQkEQrN" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1YV-D7hqWIk6xojm3gRoyabpYdaPkkzjT&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1YV-D7hqWIk6xojm3gRoyabpYdaPkkzjT" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ZLxgj0wnN0zLfcS1fEoIebwQ3i_mIYNc&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ZLxgj0wnN0zLfcS1fEoIebwQ3i_mIYNc" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1nq5Nkwnep0b3usO3u-KXhUMMZ63A6BVK&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1nq5Nkwnep0b3usO3u-KXhUMMZ63A6BVK" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1jhJcZnLYGhJwBCHrJOsuWiqXS6M9E6aP&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1jhJcZnLYGhJwBCHrJOsuWiqXS6M9E6aP" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1BSJMCrpNLWLBYYuQ8N071cXyZsU7ZZJp&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1BSJMCrpNLWLBYYuQ8N071cXyZsU7ZZJp" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1f_KDawxnAMeOqy3jN_Cael1RO2R4b_il&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1f_KDawxnAMeOqy3jN_Cael1RO2R4b_il" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1PD3lhMBQLaFMuDMOeCtg-RsFZwTYcbiH&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1PD3lhMBQLaFMuDMOeCtg-RsFZwTYcbiH" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ybXUv4da_w8iy5nEuyqbjCvGBQhUi87H&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ybXUv4da_w8iy5nEuyqbjCvGBQhUi87H" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1KKrgiBs-lh5wSrXJa0G6jwg2_-GC_GOY&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1KKrgiBs-lh5wSrXJa0G6jwg2_-GC_GOY" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1mfuHMtyeS6eLwgsCRpki8Dm0ghqxGU9I&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1mfuHMtyeS6eLwgsCRpki8Dm0ghqxGU9I" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1YJkEJrOxF0O2fwsgxSCDqe6ehdJjvBde&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1YJkEJrOxF0O2fwsgxSCDqe6ehdJjvBde" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1rW6aW9Z6AwH7kArZTMe4VKWcnNKGuAiy&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1rW6aW9Z6AwH7kArZTMe4VKWcnNKGuAiy" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1LIt2Ylc6WoGcSltpqraai_mjRsvIjS4Q&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1LIt2Ylc6WoGcSltpqraai_mjRsvIjS4Q" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=129k-lDsdfq9eO4irxHxdl8yp5PLdogyZ&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=129k-lDsdfq9eO4irxHxdl8yp5PLdogyZ" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1wpPtdns9hnrsTtZk5jGh828OR2xr3fPG&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1wpPtdns9hnrsTtZk5jGh828OR2xr3fPG" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1yNqkL7kIw47oNXWW-mZPsFts7_UQZ7Px&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1yNqkL7kIw47oNXWW-mZPsFts7_UQZ7Px" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1MEX1bHjuULZXcknxPUrRTNw6sG9a-pIK&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1MEX1bHjuULZXcknxPUrRTNw6sG9a-pIK" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1w3aaY7ldXQOtYvaVoN3zMw6AYTimDakJ&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1w3aaY7ldXQOtYvaVoN3zMw6AYTimDakJ" />
+			</a>
+
+		</div>
+
+		<!-- =========================
+			 Boca
+		========================= -->
+		<div id="boca"></div>
+		<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
+		<h2 style="text-align: center;">Boca</h2>
+		<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
+
+		<div class="gallery">
+			<a href="https://drive.google.com/thumbnail?id=1c2E9d7X_999tNrrpCY8DN3TDu9XCzMOW&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1c2E9d7X_999tNrrpCY8DN3TDu9XCzMOW" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1SO8ZayW-L6VY-oYoSCfy6tGKNRDjVTiI&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1SO8ZayW-L6VY-oYoSCfy6tGKNRDjVTiI" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1HBdjIle91Kn4amVuor2mNjs0hOTLX7KJ&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1HBdjIle91Kn4amVuor2mNjs0hOTLX7KJ" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1h_9f4DyGolAHiw5fqiCR8wIglXf0g17f&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1h_9f4DyGolAHiw5fqiCR8wIglXf0g17f" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1xR2CIbhjPohuKcFL1oMliAxgoNHd90I_&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1xR2CIbhjPohuKcFL1oMliAxgoNHd90I_" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1UnesMXH4dYLduRgXRVEqJUH_4ZUWsoGu&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1UnesMXH4dYLduRgXRVEqJUH_4ZUWsoGu" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1dPSMi0C1X9cFu9_Ooz5U92oHGVp7Jl6A&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1dPSMi0C1X9cFu9_Ooz5U92oHGVp7Jl6A" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=10RRcxgR0fwv7iTJQ-5pEf4lpZSfLduZ7&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=10RRcxgR0fwv7iTJQ-5pEf4lpZSfLduZ7" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1mq4kkHXy_gz5QanIyOJMfSvYb9EhSjLp&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1mq4kkHXy_gz5QanIyOJMfSvYb9EhSjLp" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1qohzSAVzU0NZS7fRqqpFsl4miQLo995s&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1qohzSAVzU0NZS7fRqqpFsl4miQLo995s" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1pe5R61iJ_utgGGWfkbKNERpb_dpNbaTK&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1pe5R61iJ_utgGGWfkbKNERpb_dpNbaTK" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ed-rdMEquvmFY4Bcs9YZz87sSJsF9ZCs&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ed-rdMEquvmFY4Bcs9YZz87sSJsF9ZCs" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1qNCM4gCiQHIP0GqByIihibkORW1ttN4N&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1qNCM4gCiQHIP0GqByIihibkORW1ttN4N" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1fpeCwKZ7DuAw6P_RiUrCKGCzAOFjnEaB&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1fpeCwKZ7DuAw6P_RiUrCKGCzAOFjnEaB" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1nfzK7Sgh2zYHzj3iEMqZPP_C2tNHkKd2&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1nfzK7Sgh2zYHzj3iEMqZPP_C2tNHkKd2" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1QurztyTzMgBMUDa6zxzrfdlRE1ZBEXBL&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1QurztyTzMgBMUDa6zxzrfdlRE1ZBEXBL" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1lsR9nEv9Wo19Dav1JUXZz-L_gGAwTYgk&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1lsR9nEv9Wo19Dav1JUXZz-L_gGAwTYgk" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1jfrwU3Ekaq_f6CyxkAkqHhChriR4wRG_&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1jfrwU3Ekaq_f6CyxkAkqHhChriR4wRG_" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1FMXZLGYsDxpjDdxAIagkI1I1nhxj-SoM&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1FMXZLGYsDxpjDdxAIagkI1I1nhxj-SoM" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=12PPL58PSThyeAUUFs1Ta8KywfBxSBp5o&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=12PPL58PSThyeAUUFs1Ta8KywfBxSBp5o" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1VsuHNwJClilmg3s1CI3NgO9mXLnSfMVs&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1VsuHNwJClilmg3s1CI3NgO9mXLnSfMVs" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1hiD40hH3WqxMnIy3-V9eDhj9DRKE4-eu&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1hiD40hH3WqxMnIy3-V9eDhj9DRKE4-eu" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1bMRTrqmdvIaijhRcD2Nmlvb2OmpKroVf&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1bMRTrqmdvIaijhRcD2Nmlvb2OmpKroVf" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=19uXI0qr2ikV3pbnHTLolaK5yP0jMXWJK&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=19uXI0qr2ikV3pbnHTLolaK5yP0jMXWJK" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1zAmdbw-W7DXJluSmHmQIP1nInEviYt-w&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1zAmdbw-W7DXJluSmHmQIP1nInEviYt-w" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=15CT8JSyABlfiaob8s98jujTsL3uF8Xul&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=15CT8JSyABlfiaob8s98jujTsL3uF8Xul" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1wNIRvwLvg600w_MdsVUB4wx3JFxPSqgD&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1wNIRvwLvg600w_MdsVUB4wx3JFxPSqgD" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1avxoZCF7das35UbmNU0aKM968jpF_uXx&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1avxoZCF7das35UbmNU0aKM968jpF_uXx" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=17jPMwWyzbzvWG1uI3pkemKXFRjMR0gks&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=17jPMwWyzbzvWG1uI3pkemKXFRjMR0gks" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1xczHfWOEeVj78JcqWhyM8RRZP06djNOb&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1xczHfWOEeVj78JcqWhyM8RRZP06djNOb" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ds0bKta86bt7eGwbaXySElnLwKZduSYq&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ds0bKta86bt7eGwbaXySElnLwKZduSYq" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1UEp8lqT_HsFyec0-IuQDIod6h8Mg6ECo&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1UEp8lqT_HsFyec0-IuQDIod6h8Mg6ECo" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1B6fxArNi3nT0GAOePp7fh2SbvYRRvETZ&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1B6fxArNi3nT0GAOePp7fh2SbvYRRvETZ" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1ych1HraFZymNvlcbVsD0ph9KKR__PWd2&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1ych1HraFZymNvlcbVsD0ph9KKR__PWd2" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1HAJRi9QLJfLFJNFBkXoHUS__pDTDWpmH&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1HAJRi9QLJfLFJNFBkXoHUS__pDTDWpmH" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1GvQR-ft6FHFDdxjI14mMeMt5iY3DtkNH&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1GvQR-ft6FHFDdxjI14mMeMt5iY3DtkNH" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1dRXRQHYuFuuWTGEU8Nhk_9svOUbYQDAB&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1dRXRQHYuFuuWTGEU8Nhk_9svOUbYQDAB" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1T7IW-UkIEeX2qWHbbpV3eI8gLLr0vkIq&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1T7IW-UkIEeX2qWHbbpV3eI8gLLr0vkIq" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1_VJ5t9V0ZT07R191olwoLE6w8pcoWjeo&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1_VJ5t9V0ZT07R191olwoLE6w8pcoWjeo" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1eQZ9By0QOyUZPDXaKI4jQpIhmTXOlFoH&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1eQZ9By0QOyUZPDXaKI4jQpIhmTXOlFoH" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1sz-pK9F7FAU0S4HgntewkhSD-axLJz4Q&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1sz-pK9F7FAU0S4HgntewkhSD-axLJz4Q" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1KfD3ceyOlM3D_HVrUXCbzrAvoaF3kMfM&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1KfD3ceyOlM3D_HVrUXCbzrAvoaF3kMfM" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1XcaK8hg0AoFodU00LDN2X7DlkpdOiZeR&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1XcaK8hg0AoFodU00LDN2X7DlkpdOiZeR" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1DM9YNkm2DXu4iAMiHPeSlR5d2usSEVXR&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1DM9YNkm2DXu4iAMiHPeSlR5d2usSEVXR" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1K_WqeguhBBZvmPLF3AR5mK-o19kk-fqn&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1K_WqeguhBBZvmPLF3AR5mK-o19kk-fqn" />
+			</a>
+			<a href="https://drive.google.com/thumbnail?id=1rTiErzjFUC13-0S2VRQrMROLeHUyqCU-&sz=w4000" class="popup-image">
+			  <img src="https://drive.google.com/thumbnail?id=1rTiErzjFUC13-0S2VRQrMROLeHUyqCU-" />
+			</a>
+
+		</div>
+
+		<!-- =========================
+			 Dallas
+		========================= -->
+		<div id="dallas"></div>
+		<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
+		<h2 style="text-align: center;">Dallas</h2>
+		<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
+
+		<div class="gallery">
+			<a href="https://drive.google.com/thumbnail?id=1zuHUpPZyFdoSume0NyBNQhYALAcGd1VU&sz=w4000" class="popup-image">
+  <img src="https://drive.google.com/thumbnail?id=1zuHUpPZyFdoSume0NyBNQhYALAcGd1VU" />
+</a>
+<a href="https://drive.google.com/thumbnail?id=1OfsrmOFOAifqnAkmZg_fBy1jFOw-HlAv&sz=w4000" class="popup-image">
+  <img src="https://drive.google.com/thumbnail?id=1OfsrmOFOAifqnAkmZg_fBy1jFOw-HlAv" />
+</a>
+		</div>
+
+		<hr class="my-5">
+
+		<div class="footer-copyright">
+			<div class="container py-2">
+				<div class="row py-4">
+					<div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
+						<a href="index.html" class="logo pe-0 pe-lg-3">
+							<img alt="Porto Website Template" src="SBSB-logo.png" class="opacity-7" height="50">
+						</a>
+					</div>
+					<div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+						<p>SBSB-EASTHAM 2026</p>
+					</div>
+					<div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Vendor -->
+	<script src="vendor/plugins/js/plugins.min.js"></script>
+	<!-- Theme Base, Components and Settings -->
+	<script src="js/theme.js"></script>
+	<!-- Circle Flip Slideshow Script -->
+	<script src="vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+	<!-- Current Page Views -->
+	<script src="js/views/view.home.js"></script>
+	<!-- Theme Custom -->
+	<script src="js/custom.js"></script>
+	<!-- Theme Initialization Files -->
+	<script src="js/theme.init.js"></script>
+
+	<!-- Scroll top -->
+	<a id="scrollTop">
+		<i class="icon-chevron-up"></i>
+		<i class="icon-chevron-up"></i>
+	</a>
+
+	<!-- Plugins -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+
+	<!-- Owl Carousel & Gallery Examples -->
+	<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="js/examples/examples.gallery.js"></script>
+
+	<!-- Bootstrap Switch -->
+	<link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet">
+	<script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+	<!-- Template functions -->
+	<script src="js/functions.js"></script>
+	<!-- jQuery Validate plugin files -->
+	<script src="plugins/validate/validate.min.js"></script>
+	<script src="plugins/validate/valildate-rules.js"></script>
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			// Initialize EmailJS with your specific User ID
+			emailjs.init("KlZdczArD6ZckTFX2");
+			console.log("EmailJS initialized"); // Debugging line to confirm initialization
+		})();
+	</script>
+
+	<!-- Magnific Popup Initialization -->
+	<script>
+		jQuery(document).ready(function($) {
+			$('.gallery').magnificPopup({
+				delegate: 'a.popup-image', // child items selector
+				type: 'image',
+				gallery: {
+					enabled: true // allows arrow/key navigation
+				}
+			});
+		});
+	</script>
+
+	<script src="vendor/plugins/js/plugins.min.js"></script>
+
+<script>
+jQuery(function($) {
+  $('.gallery').magnificPopup({
+    delegate: 'a.popup-image',
+    type: 'image',
+    gallery: { enabled: true }
+  });
+});
+</script>
+
+
+</body>
+</html>
+

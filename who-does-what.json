@@ -1,11 +1,11 @@
 {
   "updated": "2026-01-14",
   "people": {
-    "sara_schouest": { "name": "Sara Schouest", "ext": "", "phone": "", "email": "" },
-    "melisa_funez": { "name": "Melisa Funez", "ext": "", "phone": "", "email": "" },
-    "jordyne_priesmeyer": { "name": "Jordyne Priesmeyer", "ext": "", "phone": "", "email": "" },
-    "shane_sarmiento": { "name": "Shane Sarmiento", "ext": "", "phone": "", "email": "" },
-    "shannon_block": { "name": "Shannon Block", "ext": "", "phone": "", "email": "" },
+    "sara_schouest": { "name": "Sara Schouest", "ext": "429", "phone": "", "email": "sschouest@sbsb-eastham.com" },
+    "melisa_funez": { "name": "Melisa Funez", "ext": "471", "phone": "", "email": "mfunez@sbsb-eastham.com" },
+    "jordyne_priesmeyer": { "name": "Jordyne Priesmeyer", "ext": "731", "phone": "", "email": "jpriesmeyer@sbsb-eastham.com" },
+    "shane_sarmiento": { "name": "Shane Sarmiento", "ext": "312", "phone": "", "email": "ssarmiento@sbsb-eastham.com" },
+    "shannon_block": { "name": "Shannon Block", "ext": "470", "phone": "", "email": "sblock@sbsb-eastham.com" },
 
     "billing": { "name": "Billing", "ext": "", "phone": "", "email": "billing@sbsblaw.com" },
     "accounts_payable": { "name": "Accounts Payable", "ext": "", "phone": "", "email": "accountspayable@sbsblaw.com" },
@@ -29,14 +29,6 @@
       "personRefs": ["sara_schouest"],
       "notes": ""
     },
-    {
-      "topic": "Keycard",
-      "office": "CORPUS CHRISTI",
-      "dept": "",
-      "personRefs": ["tbd"],
-      "notes": "Needs owner/contact"
-    },
-
     {
       "topic": "Building Maintenance Request",
       "office": "HOU",

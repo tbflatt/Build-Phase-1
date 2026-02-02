@@ -16,7 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 	<!-- Web Fonts  -->
-	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+	<link id="googleFonts"
+		  href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap"
+		  rel="stylesheet" type="text/css">
 
 	<!-- Vendor CSS -->
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -48,7 +50,6 @@
 			height: auto;
 			transition: width 0.3s, height 0.3s;
 		}
-
 		#header.header-effect-shrink .header-logo img {
 			width: 90px;
 			height: auto;
@@ -68,89 +69,11 @@
 <body data-plugin-page-transition>
 	<div class="body">
 
-<header id="header" class="header-effect-shrink"
-  data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-  <div class="header-body">
-    <div class="header-container container">
-      <div class="header-row">
-        <div class="header-column">
-          <div class="header-row">
-            <div class="header-logo">
-              <a href="index.html">
-                <img alt="SBSB" style="width: 90px; height: auto;"
-                     data-sticky-width="90" data-sticky-height="90"
-                     src="SBSB-logo.png">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="header-column justify-content-end">
-          <div class="header-row">
-            <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
-              <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                <nav class="collapse">
-                  <ul class="nav nav-pills" id="mainNav">
-                    <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle active" href="index.html">Home</a>
-                    </li>
-
-                    <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle" href="#">Support</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="https://helpdesk.sbsb-eastham.com/" target="_blank">IT Ticket</a>
-                        </li>
-                        <li><a class="dropdown-item" href="osr.html">Office Service Request</a></li>
-                        <li><a class="dropdown-item" href="conf.html">Conf. Room Request</a></li>
-                        <li><a class="dropdown-item" href="hrinfo.html">PTO & Benefits Info</a></li>
-                      </ul>
-                    </li>
-
-                    <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle" href="#">Directory</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="extension.html">Extension List</a></li>
-                        <li><a class="dropdown-item" href="orgchart.html">Org Chart</a></li>
-                        <li><a class="dropdown-item" href="Help.html">Who to Call</a></li>
-                      </ul>
-                    </li>
-
-                    <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle" href="event calendar.html">Events</a>
-                    </li>
-
-                    <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle" href="#">Galleries</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="gallery.html">Christmas Party 2024</a></li>
-                        <li><a class="dropdown-item" href="Christmas-2025.html">Christmas Party 2025</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-
-              <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-                <i class="fas fa-bars"></i>
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</header>
-
-			<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
-
-
+		<!-- HEADER INCLUDE -->
+		<div id="header-include"></div>
+		<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
 
 		<div role="main" class="main">
-
-
 			<div class="container py-4">
 
 				<!-- Jump links -->
@@ -393,7 +316,7 @@
 			</div><!-- /container -->
 		</div><!-- /main -->
 
-		<!-- ================= FOOTER (SAME AS YOUR OTHER PAGES) ================= -->
+		<!-- FOOTER (leave inline for now; you can include it next) -->
 		<div class="footer-copyright">
 			<div class="container py-2">
 				<div class="row py-4">
@@ -403,18 +326,16 @@
 						</a>
 					</div>
 					<div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-						<p>SBSB-EASTHAM 2026</p>
+						<p>SBSB-EASTHAM 2025</p>
 					</div>
-					<div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
-					</div>
+					<div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end"></div>
 				</div>
 			</div>
 		</div>
-		<!-- ================= /FOOTER ================= -->
 
-	</div>
+	</div><!-- /body -->
 
-	<!-- Vendor -->
+	<!-- Vendor (Porto bundle - usually includes jQuery) -->
 	<script src="vendor/plugins/js/plugins.min.js"></script>
 
 	<!-- Theme Base, Components and Settings -->
@@ -429,10 +350,7 @@
 	<!-- Scroll top -->
 	<a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
 
-	<!-- Plugins (kept same convention as your other pages) -->
-	<script src="js/jquery.js"></script>
-	<script src="js/plugins.js"></script>
-
+	<!-- Bootstrap Switch -->
 	<link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet">
 	<script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 
@@ -441,8 +359,13 @@
 
 	<script src="1darklight.js"></script>
 
-	<!-- Template functions (duplicate kept if your pages rely on it) -->
-	<script src="js/functions.js"></script>
+	<!-- ✅ HEADER INCLUDE LOADER -->
+	<script>
+		jQuery(function($){
+			// If your header partial is somewhere else, change the path here:
+			$('#header-include').load('partials/header.html');
+		});
+	</script>
 
 </body>
 </html>
