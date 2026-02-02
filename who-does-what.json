@@ -31,13 +31,6 @@
     },
     {
       "topic": "Keycard",
-      "office": "DALLAS",
-      "dept": "",
-      "personRefs": ["tbd"],
-      "notes": "Needs owner/contact"
-    },
-    {
-      "topic": "Keycard",
       "office": "CORPUS CHRISTI",
       "dept": "",
       "personRefs": ["tbd"],
@@ -49,13 +42,6 @@
       "office": "HOU",
       "dept": "Administration",
       "personRefs": ["sara_schouest"],
-      "notes": ""
-    },
-    {
-      "topic": "Building Maintenance Request",
-      "office": "Other office",
-      "dept": "????",
-      "personRefs": ["tbd"],
       "notes": ""
     },
 

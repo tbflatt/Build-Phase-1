@@ -47,17 +47,156 @@
 		<link rel="stylesheet" href="css/custom.css">
 
 		<style>
-			.header-logo img {
-				width: 90px;
-				height: auto;
-				transition: width 0.3s, height 0.3s;
-			}
-	
-			#header.header-effect-shrink .header-logo img {
-				width: 90px; /* Adjust the sticky width */
-				height: auto; /* Maintain aspect ratio */
-			}
-		</style>
+	.header-logo img {
+		width: 90px;
+		height: auto;
+		transition: width 0.3s, height 0.3s;
+	}
+	#header.header-effect-shrink .header-logo img {
+		width: 90px;
+		height: auto;
+	}
+
+	/* ===== Conf Room facelift (page-only) ===== */
+	body{
+		background:
+			linear-gradient(180deg, rgba(13,110,253,.06) 0%, rgba(255,255,255,0) 340px),
+			#fff;
+	}
+
+	.page-shell{
+		padding: 1.25rem 0 2.5rem;
+	}
+	@media (min-width: 992px){
+		.page-shell{ padding: 2rem 0 3.5rem; }
+	}
+
+	.conf-card{
+		border: 1px solid rgba(0,0,0,.08);
+		border-radius: 18px;
+		box-shadow: 0 14px 40px rgba(0,0,0,.07);
+		overflow: hidden;
+	}
+
+	.conf-card .card-body{
+		padding: 1.25rem;
+	}
+	@media (min-width: 992px){
+		.conf-card .card-body{ padding: 2rem; }
+	}
+
+	.page-title{
+		display: flex;
+		align-items: flex-start;
+		gap: .85rem;
+		margin-bottom: 1.25rem;
+	}
+	.page-title .icon{
+		width: 44px;
+		height: 44px;
+		border-radius: 14px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(13,110,253,.10);
+		color: #0d6efd;
+		flex: 0 0 auto;
+	}
+	.page-title h2{
+		font-size: 1.35rem;
+		margin: 0;
+	}
+	.page-title .sub{
+		color: rgba(0,0,0,.65);
+		margin-top: .25rem;
+		font-size: .95rem;
+	}
+
+	/* Section separators */
+	.conf-section{
+		margin-top: 1.25rem;
+		padding-top: 1.25rem;
+		border-top: 1px solid rgba(0,0,0,.08);
+	}
+	.conf-section-title{
+		font-weight: 700;
+		color: rgba(0,0,0,.78);
+		margin-bottom: .75rem;
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+	}
+	.conf-section-title i{
+		opacity: .75;
+	}
+
+	/* Form controls */
+	#conf-form .form-control,
+	#conf-form .form-select{
+		border-radius: 12px;
+		border: 1px solid rgba(0,0,0,.12);
+		padding: .65rem .85rem;
+	}
+
+	#conf-form .form-control:focus,
+	#conf-form .form-select:focus{
+		box-shadow: 0 0 0 .2rem rgba(13,110,253,.12);
+		border-color: rgba(13,110,253,.55);
+	}
+
+	#conf-form .form-label{
+		font-weight: 600;
+		color: rgba(0,0,0,.78);
+	}
+
+	/* Checkbox row */
+	#conf-form .form-check{
+		padding: .85rem 1rem;
+		border: 1px dashed rgba(0,0,0,.18);
+		border-radius: 14px;
+		background: rgba(0,0,0,.02);
+	}
+
+	/* Buttons */
+	.btn-pill{
+		border-radius: 999px !important;
+		padding: .65rem 1.1rem;
+		font-weight: 600;
+	}
+
+	/* Attachment name pill */
+	#fileUploadName{
+		display: inline-block;
+		margin-left: .75rem;
+		padding: .35rem .6rem;
+		border-radius: 999px;
+		background: rgba(0,0,0,.06);
+		color: rgba(0,0,0,.75);
+		font-size: .9rem;
+		vertical-align: middle;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	/* Alerts */
+	.contact-form-success,
+	.contact-form-error{
+		border-radius: 14px;
+	}
+
+	.conf-card .row{
+	margin-left: -12px;
+	margin-right: -12px;
+	}
+
+	.conf-card .form-group{
+	padding-left: 12px;
+	padding-right: 12px;
+	}
+</style>
+
 
 	</head>
 	<body data-plugin-page-transition>
@@ -130,10 +269,13 @@
 					</div>
 				</div>
 			</header>
-
+			<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;" />
 	
-<div class="card mb-4">
-  <div class="card-body">
+<div class="page-shell">
+	<div class="container">
+
+		<div class="conf-card card mb-4">
+			<div class="card-body">
     <div class="row">
       <div class="col">
         <form id="conf-form" class="contact-form" action="php/contact-form.php" method="POST">
