@@ -49,10 +49,6 @@
 			transition: width 0.3s, height 0.3s;
 		}
 
-		#header.header-effect-shrink .header-logo img {
-			width: 90px;
-			height: auto;
-		}
 
 		/* Page-specific */
 		.section-title { display:flex; align-items:center; gap:.75rem; margin-bottom:0; }
@@ -68,8 +64,8 @@
 <body data-plugin-page-transition>
 	<div class="body">
 
-<header id="header" class="header-effect-shrink"
-  data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+<header id="header"
+  data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
   <div class="header-body">
     <div class="header-container container">
       <div class="header-row">
@@ -403,7 +399,7 @@
 						</a>
 					</div>
 					<div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-						<p>SBSB 2026</p>
+						<p>SBSB Law 2026</p>
 					</div>
 					<div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
 					</div>

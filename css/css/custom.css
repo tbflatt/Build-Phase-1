@@ -1,8 +1,65 @@
-/* 
+/* ================================
+   HARD DISABLE PORTO STICKY SHRINK
+   (keep header/nav/logo identical)
+   ================================ */
 
-1. Add your custom Css styles below
-2. Place the this code in your template: 
+/* 1) Never allow Porto shrink styles to apply */
+#header.header-effect-shrink {
+  /* neutralize the shrink effect class */
+}
 
- <link href="css/custom.css" rel="stylesheet">
+/* 2) When sticky becomes active, lock the header/body sizing */
+#header.sticky-header-active .header-body,
+#header.sticky-header-active .header-container,
+#header.sticky-header-active .header-row,
+#header.sticky-header-active .header-column {
+  height: auto !important;
+  min-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 
-*/
+/* 3) Lock the logo size (Porto often sets inline width/height when sticky) */
+#header .header-logo img,
+#header.sticky-header-active .header-logo img {
+  width: 90px !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* 4) Lock nav + link sizing (Porto reduces line-height/padding/font-size on sticky) */
+#header .header-nav-main nav > ul > li > a,
+#header.sticky-header-active .header-nav-main nav > ul > li > a {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  padding-top: inherit !important;
+  padding-bottom: inherit !important;
+}
+
+/* 5) Lock dropdown menu sizing too (optional, but keeps everything consistent) */
+#header .dropdown-menu,
+#header.sticky-header-active .dropdown-menu {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* 6) If Porto is forcing a smaller sticky container height, undo it */
+#header.sticky-header-active .header-container.container {
+  min-height: 0 !important;
+}
+
+/* 7) Prevent “squish” caused by reduced header-body padding in sticky mode */
+#header .header-body {
+  padding-top: 15px;     /* choose what your normal header looks like */
+  padding-bottom: 15px;  /* choose what your normal header looks like */
+}
+#header.sticky-header-active .header-body {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+/* 8) Make the divider line part of the header so it never disappears */
+#header .header-body {
+  border-bottom: 1px solid #ccc;
+}
+/* remove your <hr> after header */
