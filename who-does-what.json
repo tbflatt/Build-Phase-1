@@ -1,22 +1,22 @@
 {
   "updated": "2026-01-14",
   "people": {
-    "sara_schouest": { "name": "Sara Schouest", "ext": "429", "phone": "", "email": "sschouest@sbsb-eastham.com" },
-    "melisa_funez": { "name": "Melisa Funez", "ext": "471", "phone": "", "email": "mfunez@sbsb-eastham.com" },
-    "jordyne_priesmeyer": { "name": "Jordyne Priesmeyer", "ext": "731", "phone": "", "email": "jpriesmeyer@sbsb-eastham.com" },
-    "shane_sarmiento": { "name": "Shane Sarmiento", "ext": "312", "phone": "", "email": "ssarmiento@sbsb-eastham.com" },
-    "shannon_block": { "name": "Shannon Block", "ext": "470", "phone": "", "email": "sblock@sbsb-eastham.com" },
+    "sara_schouest": { "name": "Sara Schouest", "ext": "429", "phone": "", "email": "sschouest@sbsblaw.com" },
+    "melisa_funez": { "name": "Melisa Funez", "ext": "471", "phone": "", "email": "mfunez@sbsblaw.com" },
+    "jordyne_priesmeyer": { "name": "Jordyne Priesmeyer", "ext": "731", "phone": "", "email": "jpriesmeyer@sbsblaw.com" },
+    "shane_sarmiento": { "name": "Shane Sarmiento", "ext": "312", "phone": "", "email": "ssarmiento@sbsblaw.com" },
+    "shannon_block": { "name": "Shannon Block", "ext": "470", "phone": "", "email": "sblock@sbsblaw.com" },
 
     "billing": { "name": "Billing", "ext": "", "phone": "", "email": "billing@sbsblaw.com" },
     "accounts_payable": { "name": "Accounts Payable", "ext": "", "phone": "", "email": "accountspayable@sbsblaw.com" },
-    "third_party_invoices": { "name": "Third-Party Invoices (TPI)", "ext": "", "phone": "", "email": "thirdpartyinvoice@sbsb-eastham.com" },
-    "credit_cards": { "name": "Firm Credit Card", "ext": "", "phone": "", "email": "cc@sbsb-eastham.com" },
+    "third_party_invoices": { "name": "Third-Party Invoices (TPI)", "ext": "", "phone": "", "email": "thirdpartyinvoice@sbsblaw.com" },
+    "credit_cards": { "name": "Firm Credit Card", "ext": "", "phone": "", "email": "cc@sbsblaw.com" },
 
-    "business_development": { "name": "Business Development", "ext": "", "phone": "", "email": "businessdevelopment@sbsb-eastham.com" },
-    "finance_committee": { "name": "Finance Committee", "ext": "", "phone": "", "email": "financecommittee@sbsb-eastham.com" },
+    "business_development": { "name": "Business Development", "ext": "", "phone": "", "email": "businessdevelopment@sbsblaw.com" },
+    "finance_committee": { "name": "Finance Committee", "ext": "", "phone": "", "email": "financecommittee@sbsblaw.com" },
 
     "helpdesk": { "name": "Helpdesk", "ext": "321", "phone": "", "email": "helpdesk@sbsblaw.com" },
-    "employee_development": { "name": "Employee Development", "ext": "", "phone": "", "email": "EmployeeDevelopment@sbsb-eastham.com" },
+    "employee_development": { "name": "Employee Development", "ext": "", "phone": "", "email": "EmployeeDevelopment@sbsblaw.com" },
 
     "office_services_local": { "name": "Local Office Services Staff", "ext": "", "phone": "", "email": "" },
     "tbd": { "name": "TBD", "ext": "", "phone": "", "email": "" }
