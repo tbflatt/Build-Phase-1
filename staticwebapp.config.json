@@ -6,44 +6,31 @@
           "openIdIssuer": "https://login.microsoftonline.com/b35ecf49-005b-46ca-be5d-00205f52d853/v2.0",
           "clientIdSettingName": "AzureActiveDirectory__ClientId",
           "clientSecretSettingName": "AzureActiveDirectory__ClientSecret"
-        },
-        "login": {
-          "loginParameters": [
-            "response_type=code id_token",
-            "prompt=login"
-          ]
-        },
-        "issuer": "https://login.microsoftonline.com/b35ecf49-005b-46ca-be5d-00205f52d853/v2.0"
+        }
       }
     }
   },
+
   "routes": [
     {
       "route": "/login",
-      "rewrite": "/.auth/login/aad"
-    },
-    {
-      "route": "/",
-      "allowedRoles": ["authenticated"],
-      "serve": "/index.html"
+      "redirect": "/.auth/login/aad"
     },
     {
       "route": "/*",
-      "allowedRoles": ["authenticated"],
-      "serve": "/index.html",
+      "allowedRoles": [
+        "authenticated"
+      ],
       "headers": {
         "content-security-policy": "frame-src *;"
       }
     }
   ],
-  "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": ["/.auth/*"]
-  },
+
   "responseOverrides": {
     "401": {
-      "redirect": "/login",
-      "statusCode": 302
+      "statusCode": 302,
+      "redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer"
     }
   }
 }
