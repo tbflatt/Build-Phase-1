@@ -46,6 +46,9 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 
+	<!-- Intranet Search -->
+	<link rel="stylesheet" href="css/intranet-search.css">
+
 
 	<style>
 /* Force dark gray Owl/Porto nav arrows */
@@ -132,6 +135,56 @@
                         <li><a class="dropdown-item" href="Christmas-2025.html">Christmas Party 2025</a></li>
                       </ul>
                     </li>
+					<li class="nav-item d-flex align-items-center ms-3">
+  <form action="search.html" method="get" style="margin: 0;">
+    <div style="
+      display: flex;
+      align-items: center;
+      width: 210px;
+      height: 34px;
+      border: 1px solid #d5d5d5;
+      border-radius: 18px;
+      background: #fff;
+      overflow: hidden;
+    ">
+      
+      <input
+        type="search"
+        name="q"
+        placeholder="Search..."
+        aria-label="Search Intranet"
+        style="
+          border: 0;
+          outline: 0;
+          box-shadow: none;
+          width: 100%;
+          height: 100%;
+          padding: 0 8px 0 14px;
+          font-size: 12px;
+          font-family: Poppins, sans-serif;
+          background: transparent;
+        "
+      >
+
+      <button
+        type="submit"
+        aria-label="Search"
+        style="
+          border: 0;
+          background: transparent;
+          width: 38px;
+          height: 100%;
+          cursor: pointer;
+          color: #174e7c;
+          padding: 0;
+        "
+      >
+        <i class="fas fa-search"></i>
+      </button>
+
+    </div>
+  </form>
+</li>
                   </ul>
                 </nav>
               </div>
@@ -245,6 +298,8 @@
 	<link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet">
 	<script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 	<script src="js/functions.js"></script>
+	<!-- Intranet Search -->
+	<script src="js/intranet-search.js"></script>
 
 </body>
 </html>

@@ -8,7 +8,7 @@
     "shannon_block": { "name": "Shannon Block", "ext": "470", "phone": "", "email": "sblock@sbsblaw.com" },
 
     "billing": { "name": "Billing", "ext": "", "phone": "", "email": "billing@sbsblaw.com" },
-    "accounts_payable": { "name": "Accounts Payable", "ext": "", "phone": "", "email": "accountspayable@sbsblaw.com" },
+    "accounts_payable": { "name": "Emburse Expense Reports", "ext": "", "phone": "", "email": "accountspayable@sbsblaw.com" },
     "third_party_invoices": { "name": "Third-Party Invoices (TPI)", "ext": "", "phone": "", "email": "thirdpartyinvoice@sbsblaw.com" },
     "credit_cards": { "name": "Firm Credit Card", "ext": "", "phone": "", "email": "cc@sbsblaw.com" },
 
@@ -98,7 +98,7 @@
     {
       "topic": "Vendor/payment status, bar dues, new client forms, new vendor forms, IOLTA, reimbursement status updates",
       "office": "ALL",
-      "dept": "Accounts Payable",
+      "dept": "Emburse Expense Reports",
       "personRefs": ["accounts_payable"],
       "notes": ""
     },
@@ -112,7 +112,7 @@
     {
       "topic": "Firm credit card & CC receipts",
       "office": "ALL",
-      "dept": "Accounts Payable",
+      "dept": "Emburse Expense Reports",
       "personRefs": ["credit_cards"],
       "notes": ""
     },

@@ -20,7 +20,7 @@
   "routes": [
     {
       "route": "/login",
-      "redirect": "/.auth/login/aad"
+      "rewrite": "/.auth/login/aad"
     },
     {
       "route": "/",

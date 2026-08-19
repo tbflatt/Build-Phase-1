@@ -1,0 +1,248 @@
+{
+  "updated": "2026-08-19",
+  "items": [
+    {
+      "id": "home",
+      "title": "Intranet Home",
+      "category": "Navigation",
+      "description": "SBSB intranet home page and office image carousel.",
+      "url": "index.html",
+      "keywords": [
+        "home",
+        "homepage",
+        "intranet",
+        "SBSB",
+        "Houston",
+        "Chicago",
+        "New Orleans",
+        "Corpus Christi",
+        "Boca",
+        "Dallas"
+      ],
+      "content": "SBSB intranet home office locations Houston Chicago New Orleans Corpus Christi Boca Dallas"
+    },
+    {
+      "id": "it-ticket",
+      "title": "IT Ticket",
+      "category": "Support",
+      "description": "Open the SBSB helpdesk to report a technology issue or request IT assistance.",
+      "url": "https://helpdesk.sbsb-eastham.com/",
+      "keywords": [
+        "IT",
+        "helpdesk",
+        "support",
+        "computer",
+        "software",
+        "hardware",
+        "technology",
+        "tech issue",
+        "ticket",
+        "password",
+        "printer"
+      ],
+      "content": "IT support help desk technology ticket hardware software computer issue"
+    },
+    {
+      "id": "office-service",
+      "title": "Office Service Request",
+      "category": "Support",
+      "description": "Submit office service requests by city for print, mail, supplies, and general office needs.",
+      "url": "osr.html",
+      "keywords": [
+        "office services",
+        "OSR",
+        "print request",
+        "mail request",
+        "supply restock",
+        "supplies",
+        "Houston",
+        "Boca",
+        "New Orleans",
+        "Chicago",
+        "Dallas",
+        "Corpus Christi"
+      ],
+      "content": "Office Service Request city category print request mail request supply restock general extension phone attachment"
+    },
+    {
+      "id": "conference-room",
+      "title": "Conference Room Request",
+      "category": "Support",
+      "description": "Reserve a conference room and request video conference, food, or meeting support.",
+      "url": "conf.html",
+      "keywords": [
+        "conference room",
+        "conf room",
+        "meeting room",
+        "reserve room",
+        "reservation",
+        "Teams",
+        "Zoom",
+        "food",
+        "meeting"
+      ],
+      "content": "Conference room request reserved for meeting group reason video conference Teams Zoom date time number of people food"
+    },
+    {
+      "id": "pto",
+      "title": "Paid Time Off (PTO)",
+      "category": "HR & Benefits",
+      "description": "PTO eligibility, accrual rates, requesting time off, and payout rules.",
+      "url": "hrinfo.html#pto",
+      "keywords": [
+        "PTO",
+        "paid time off",
+        "vacation",
+        "leave",
+        "time off",
+        "accrual",
+        "part time",
+        "full time",
+        "holiday pay",
+        "termination payout"
+      ],
+      "content": "PTO accrual begins first day employment two weeks before requested leave part-time 20 29 hours full-time 30 hours first year after one year after five years"
+    },
+    {
+      "id": "health-insurance",
+      "title": "Health Insurance & Benefits",
+      "category": "HR & Benefits",
+      "description": "Employee benefit guide, medical plan information, insurance ID card, and contribution rates.",
+      "url": "hrinfo.html#health",
+      "keywords": [
+        "benefits",
+        "health insurance",
+        "medical",
+        "insurance",
+        "employee benefit guide",
+        "ID card",
+        "contributions",
+        "401k"
+      ],
+      "content": "Health Insurance Employee Benefit Guide medical plan benefits summary employer employee contributions digital insurance ID card"
+    },
+    {
+      "id": "benefit-documents",
+      "title": "Benefits Documents",
+      "category": "Documents",
+      "description": "Open or download the employee benefit guide, digital ID card flyer, and contribution rate sheet.",
+      "url": "hrinfo.html#documents",
+      "keywords": [
+        "PDF",
+        "benefit guide",
+        "digital ID card",
+        "rate sheet",
+        "download",
+        "documents",
+        "contributions"
+      ],
+      "content": "SBSB 2025 2026 Employee Benefit Guide Digital ID Card Flyer Employer Employee Contributions Rate Sheet"
+    },
+    {
+      "id": "extensions",
+      "title": "Extension List",
+      "category": "Directory",
+      "description": "Open the firm extension directory.",
+      "url": "extension.html",
+      "keywords": [
+        "extension",
+        "extensions",
+        "phone",
+        "telephone",
+        "directory",
+        "contact",
+        "employee",
+        "staff"
+      ],
+      "content": "SBSB extension list phone directory employee contact"
+    },
+    {
+      "id": "who-to-call",
+      "title": "Who to Call",
+      "category": "Directory",
+      "description": "Search firm topics to find the responsible department and contact person.",
+      "url": "Help.html",
+      "keywords": [
+        "who to call",
+        "responsible department",
+        "contact",
+        "keycard",
+        "PTO",
+        "WestLaw",
+        "FedEx",
+        "billing",
+        "tech",
+        "IT",
+        "office supplies",
+        "training"
+      ],
+      "content": "Who Does What responsible department contact office topic keycard HR benefits PTO timesheet WestLaw FedEx billing Emburse invoices credit card marketing IT office supplies employee development"
+    },
+    {
+      "id": "org-chart",
+      "title": "Organizational Chart",
+      "category": "Directory",
+      "description": "View the SBSB organizational chart.",
+      "url": "orgchart.html",
+      "keywords": [
+        "org chart",
+        "organization chart",
+        "organizational chart",
+        "management",
+        "reporting",
+        "employee",
+        "people",
+        "staff",
+        "directory"
+      ],
+      "content": "SBSB Organizational Chart reporting structure people staff management"
+    },
+    {
+      "id": "events",
+      "title": "SBSB Event Calendar",
+      "category": "Events",
+      "description": "View upcoming SBSB events on the firm calendar.",
+      "url": "event calendar.html",
+      "keywords": [
+        "events",
+        "calendar",
+        "schedule",
+        "firm events",
+        "upcoming"
+      ],
+      "content": "SBSB Event Calendar month list year upcoming events"
+    },
+    {
+      "id": "gallery-2024",
+      "title": "Christmas Party 2024",
+      "category": "Galleries",
+      "description": "Photo gallery for the 2024 SBSB Christmas Party.",
+      "url": "gallery.html",
+      "keywords": [
+        "gallery",
+        "photos",
+        "pictures",
+        "Christmas",
+        "party",
+        "2024"
+      ],
+      "content": "SBSB Christmas Party 2024 photo gallery pictures"
+    },
+    {
+      "id": "gallery-2025",
+      "title": "Christmas Party 2025",
+      "category": "Galleries",
+      "description": "Photo gallery for the 2025 SBSB Christmas Party.",
+      "url": "Christmas-2025.html",
+      "keywords": [
+        "gallery",
+        "photos",
+        "pictures",
+        "Christmas",
+        "party",
+        "2025"
+      ],
+      "content": "SBSB Christmas Party 2025 photo gallery pictures"
+    }
+  ]
+}

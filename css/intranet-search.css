@@ -1,0 +1,535 @@
+/* =========================================================
+   SBSB INTRANET SEARCH
+   ========================================================= */
+
+
+/* =========================================================
+   HEADER SEARCH NAV ITEM
+   ========================================================= */
+
+.intranet-search-nav {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+}
+
+
+/* =========================================================
+   SEARCH FORM
+   ========================================================= */
+
+.intranet-search-form {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 215px;
+  height: 34px;
+
+  margin: 0;
+
+  border-radius: 999px;
+}
+
+
+/*
+ * White background sits underneath both
+ * the ghost completion and actual input.
+ */
+.intranet-search-form::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   GHOST / INLINE AUTOCOMPLETE TEXT
+   ========================================================= */
+
+/*
+ * This layer sits underneath the real input.
+ *
+ * Example:
+ *
+ * User typed: PT
+ * Ghost text: PT + O
+ *
+ * The "PT" portion is transparent.
+ * Only the "O" is visible.
+ */
+
+.intranet-search-ghost {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+
+  padding:
+    0
+    38px
+    0
+    14px;
+
+  font-family:
+    Poppins,
+    sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 34px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+
+/*
+ * This occupies exactly the space of what
+ * the employee already typed.
+ */
+.intranet-search-ghost-prefix {
+  color: transparent;
+
+  white-space: pre;
+}
+
+
+/*
+ * Only the remaining suggested letters
+ * are shown.
+ */
+.intranet-search-ghost-remainder {
+  color:
+    rgba(23, 78, 124, 0.35);
+
+  white-space: pre;
+}
+
+
+/* =========================================================
+   ACTUAL SEARCH INPUT
+   ========================================================= */
+
+.intranet-search-input {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 34px;
+
+  border:
+    1px solid
+    #d7dce2;
+
+  border-radius: 999px;
+
+  /*
+   * Must stay transparent so the
+   * faint suggestion underneath it
+   * remains visible.
+   */
+  background: transparent;
+
+  color: #333333;
+
+  font-family:
+    Poppins,
+    sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 34px;
+
+  padding:
+    0
+    38px
+    0
+    14px;
+
+  outline: none;
+
+  box-shadow: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+.intranet-search-input::placeholder {
+  color: #8a9098;
+}
+
+
+.intranet-search-input:focus {
+  border-color: #174e7c;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(23, 78, 124, 0.10);
+}
+
+
+/*
+ * Remove browser-generated decorations
+ * from search inputs where supported.
+ */
+
+.intranet-search-input::-webkit-search-decoration,
+.intranet-search-input::-webkit-search-cancel-button,
+.intranet-search-input::-webkit-search-results-button,
+.intranet-search-input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+   ========================================================= */
+
+.intranet-search-form button {
+  position: absolute;
+
+  right: 3px;
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  width: 34px;
+  height: 28px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #174e7c;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3;
+}
+
+
+.intranet-search-form button:hover {
+  color: #0d6efd;
+}
+
+
+.intranet-search-form button:focus {
+  outline: none;
+}
+
+
+/* =========================================================
+   OLD LIVE DROPDOWN
+   ========================================================= */
+
+/*
+ * The old dropdown suggestions are
+ * intentionally disabled.
+ *
+ * This prevents the blue links that were
+ * spilling over the page in your screenshot.
+ */
+
+.intranet-search-dropdown {
+  display: none !important;
+}
+
+
+/* =========================================================
+   FULL SEARCH RESULTS PAGE
+   ========================================================= */
+
+.search-page-shell {
+  padding:
+    34px
+    0
+    60px;
+}
+
+
+.search-page-card {
+  border:
+    1px solid
+    rgba(0, 0, 0, 0.08);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 34px
+    rgba(0, 0, 0, 0.06);
+
+  overflow: hidden;
+}
+
+
+.search-page-card .card-body {
+  padding: 28px;
+}
+
+
+/* =========================================================
+   LARGE SEARCH FIELD ON SEARCH.HTML
+   ========================================================= */
+
+.search-page-input-wrap {
+  position: relative;
+}
+
+
+.search-page-input-wrap .fas {
+  position: absolute;
+
+  left: 17px;
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  color: #6c757d;
+
+  z-index: 2;
+}
+
+
+#searchPageInput {
+  height: 48px;
+
+  border-radius: 999px;
+
+  padding-left: 46px;
+
+  font-size: 15px;
+}
+
+
+#searchPageInput:focus {
+  border-color:
+    rgba(13, 110, 253, 0.55);
+
+  box-shadow:
+    0 0 0 0.2rem
+    rgba(13, 110, 253, 0.10);
+}
+
+
+/* =========================================================
+   SEARCH STATUS / COUNT
+   ========================================================= */
+
+.search-page-summary {
+  margin:
+    18px
+    2px
+    8px;
+
+  color: #6c757d;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   SEARCH RESULTS LIST
+   ========================================================= */
+
+.search-page-results {
+  display: grid;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   INDIVIDUAL RESULT
+   ========================================================= */
+
+.search-page-result {
+  display: block;
+
+  padding:
+    16px
+    18px;
+
+  border:
+    1px solid
+    #e7eaee;
+
+  border-radius: 12px;
+
+  color: #333333;
+
+  background: #ffffff;
+
+  text-decoration: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+
+.search-page-result:hover {
+  border-color:
+    rgba(13, 110, 253, 0.35);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.05);
+
+  transform:
+    translateY(-1px);
+
+  color: #333333;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   RESULT CATEGORY
+   ========================================================= */
+
+.search-page-result .category {
+  color: #0d6efd;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   RESULT TITLE
+   ========================================================= */
+
+.search-page-result h3 {
+  margin:
+    3px
+    0
+    4px;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   RESULT DESCRIPTION
+   ========================================================= */
+
+.search-page-result p {
+  margin: 0;
+
+  color: #6c757d;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1199.98px) {
+
+  .intranet-search-form {
+    width: 190px;
+  }
+
+
+  .intranet-search-nav {
+    margin-left: 6px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE NAV
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .intranet-search-nav {
+    display: block;
+
+    width: 100%;
+
+    margin:
+      8px
+      0
+      6px;
+
+    padding:
+      0
+      12px;
+  }
+
+
+  .intranet-search-form {
+    width: 100%;
+    height: 40px;
+  }
+
+
+  .intranet-search-input {
+    height: 40px;
+
+    font-size: 13px;
+
+    line-height: 40px;
+  }
+
+
+  .intranet-search-ghost {
+    height: 40px;
+
+    font-size: 13px;
+
+    line-height: 40px;
+  }
+
+}
